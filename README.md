@@ -36,8 +36,10 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
+```
 
 ## Usage
+```
 # Training DQN on Atari Pong
 python train_dqn_pong.py --seed 42 --episodes 1000
 
@@ -46,10 +48,11 @@ python train_dqn_minigrid.py --seed 42 --episodes 5000
 
 # Training DRQN on MiniGrid MemoryEnv
 python train_drqn_minigrid.py --seed 42 --episodes 5000 --lstm-size 256
-
+```
 ## Evaluation
+```
 python evaluate.py --model checkpoints/dqn_pong_final.pth --episodes 100
-
+```
 ## Results
 Results include learning curves, success rates, and qualitative demonstrations comparing vanilla DQN performance on Pong versus memory-augmented DQN on memory-dependent tasks.
 
