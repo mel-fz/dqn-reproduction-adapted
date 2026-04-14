@@ -104,7 +104,7 @@ def main():
                 device = device
             )
 
-            episode_rewards.append(total_reward)
+            
 
             if terminated or truncated:
                 break
