@@ -1,0 +1,52 @@
+# DQN Hyperparameters for Atari Pong
+# Based on "Human-level control through deep reinforcement learning" (Mnih et al., 2015)
+
+environment:
+  name: "ALE/Pong-v5"
+  frame_stack: 4
+  screen_size: 84
+  noop_max: 30
+  frameskip: 4
+
+training:
+  total_timesteps: 10_000_000
+  episodes: 1000
+  learning_rate: 0.00025
+  gamma: 0.99
+  batch_size: 32
+  
+  # Epsilon-greedy exploration
+  epsilon_start: 1.0
+  epsilon_end: 0.1
+  epsilon_decay: 1_000_000  # Linear decay over 1M timesteps
+  
+  # Replay buffer
+  replay_buffer_size: 1_000_000
+  learning_starts: 50_000  # Start training after 50k frames
+  
+  # Target network update frequency
+  target_update_freq: 10_000
+  
+  # Gradient clipping
+  grad_norm_clip: 10.0
+
+model:
+  architecture: "conv2d"
+  hidden_size: 512
+  n_frames: 4
+  
+network:
+  conv_channels: [32, 64, 64]
+  conv_kernels: [8, 4, 3]
+  conv_strides: [4, 2, 1]
+  conv_padding: [0, 0, 0]
+
+optimizer:
+  name: "Adam"
+  betas: [0.9, 0.999]
+  eps: 1e-8
+
+device: "cuda"
+seed: 42
+save_interval: 100000
+checkpoint_dir: "checkpoints"

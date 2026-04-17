@@ -1,3 +1,7 @@
+import os
+# Fix OpenMP conflict between numpy, scipy, and torch
+os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
+
 import random
 from collections import deque
 
@@ -7,9 +11,11 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.optim as optim
+import argparse
 
 from models.minigrid_dqn import MiniGridDQN
 from utils.replay_buffer import ReplayBuffer
+from utils.logging import ExperimentLogger
 
 def preprocess_obs(obs):
     # Convert the observation to a tensor and permute dimensions to (C, H, W)
@@ -44,6 +50,15 @@ def update_model(policy_net, target_net, replay_buffer, optimizer, batch_size, g
     return loss.item()
 
 def main():
+    parser = argparse.ArgumentParser(description="Train DQN on MiniGrid MemoryEnv")
+    parser.add_argument("--seed", type=int, default=42, help="Random seed")
+    parser.add_argument("--episodes", type=int, default=100, help="Number of training episodes")
+    args = parser.parse_args()
+    
+    # Set seeds
+    np.random.seed(args.seed)
+    torch.manual_seed(args.seed)
+    
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     
     env = gym.make("MiniGrid-MemoryS7-v0")
@@ -59,23 +74,50 @@ def main():
     optimizer = optim.Adam(policy_net.parameters(), lr=1e-3)
     replay_buffer = ReplayBuffer(capacity=10000)
 
-    num_episodes = 100
+    num_episodes = args.episodes
     batch_size = 32
     gamma = 0.99
     epsilon_start = 1.0
     epsilon_end = 0.1
     epsilon_decay = 0.995
     target_update_freq = 10
+    lr = 1e-3
 
     epsilon = epsilon_start
     episode_rewards = []
+    
+    # Setup logger
+    config = {
+        "learning_rate": lr,
+        "gamma": gamma,
+        "epsilon_start": epsilon_start,
+        "epsilon_end": epsilon_end,
+        "epsilon_decay": epsilon_decay,
+        "batch_size": batch_size,
+        "target_update_freq": target_update_freq,
+        "replay_buffer_capacity": 10000,
+        "environment": "MiniGrid-MemoryS7-v0",
+        "model": "DQN (feed-forward)",
+    }
+    logger = ExperimentLogger(
+        log_dir="results/logs",
+        experiment_name="dqn_minigrid",
+        seed=args.seed,
+        config=config
+    )
 
     print(f"Training on device: {device}")
+    print(f"Random seed: {args.seed}")
     print(f"Number of actions: {n_actions}")
+    print(f"Episodes: {num_episodes}")
 
+    total_steps = 0
     for episode in range(num_episodes):
         obs, _ = env.reset()
         state = preprocess_obs(obs)
+        
+        # Log episode start
+        logger.log_episode_start(episode + 1, total_steps)
 
         done = False
         total_reward = 0.0
@@ -93,6 +135,7 @@ def main():
             state = next_state
             total_reward += reward
             step_count += 1
+            total_steps += 1
 
             loss_value = update_model(
                 policy_net = policy_net, 
@@ -104,13 +147,14 @@ def main():
                 device = device
             )
 
-            
-
             if terminated or truncated:
                 break
 
         episode_rewards.append(total_reward)
         epsilon = max(epsilon_end, epsilon * epsilon_decay)
+        
+        # Log episode end
+        logger.log_episode_end(total_steps, success=(total_reward > 0.9), metrics={"steps": step_count})
 
         if episode % target_update_freq == 0:
             target_net.load_state_dict(policy_net.state_dict())
@@ -118,11 +162,14 @@ def main():
         avg_reward = np.mean(episode_rewards[-10:])
         print(f"Episode {episode + 1}/{num_episodes} | "
               f"Reward: {total_reward:.3f} | "
+              f"Avg10: {avg_reward:.3f} | "
               f"Epsilon: {epsilon:.3f} | "
               f"Steps: {step_count} | "
               f"Loss: {loss_value if loss_value is not None else 'N/A'}"
             )
-        
+    
+    # Save logs
+    logger.save()
     env.close()
 
 if __name__ == "__main__":

@@ -14,8 +14,13 @@ learn temporal dependencies. Randomly shuffled single transitions (like
 standard DQN replay) would break the sequence and the LSTM couldn't learn.
 """
 
+import os
+# Fix OpenMP conflict between numpy, scipy, and torch
+os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
+
 import random
 from collections import deque
+import argparse
 
 import gymnasium as gym
 import minigrid  # noqa: F401 — registers MiniGrid envs with gymnasium
@@ -26,6 +31,7 @@ import torch.optim as optim
 import matplotlib.pyplot as plt
 
 from models.drqn import DRQN
+from utils.logging import ExperimentLogger, MultiSeedAggregator
 
 
 # ---------------------------------------------------------------------------
@@ -252,10 +258,37 @@ def train(seed=42, num_episodes=500, lstm_hidden_size=128, seq_len=8,
 
     epsilon        = epsilon_start
     episode_rewards = []
+    
+    # Setup logger
+    config = {
+        "learning_rate": lr,
+        "gamma": gamma,
+        "epsilon_start": epsilon_start,
+        "epsilon_end": epsilon_end,
+        "epsilon_decay": epsilon_decay,
+        "batch_size": batch_size,
+        "seq_len": seq_len,
+        "target_update_freq": target_update_freq,
+        "lstm_hidden_size": lstm_hidden_size,
+        "buffer_capacity": buffer_capacity,
+        "environment": "MiniGrid-MemoryS7-v0",
+        "model": "DRQN (recurrent)",
+    }
+    logger = ExperimentLogger(
+        log_dir="results/logs",
+        experiment_name="drqn_minigrid",
+        seed=seed,
+        config=config
+    )
+    
+    total_steps = 0
 
     for episode in range(num_episodes):
         obs, _ = env.reset()
         state  = preprocess_obs(obs)
+        
+        # Log episode start
+        logger.log_episode_start(episode + 1, total_steps)
 
         # Fresh hidden state at the start of each episode
         hidden = policy_net.init_hidden(batch_size=1, device=device)
@@ -280,6 +313,7 @@ def train(seed=42, num_episodes=500, lstm_hidden_size=128, seq_len=8,
             state        = next_state
             total_reward += reward
             step_count   += 1
+            total_steps  += 1
 
             # Train on a batch of sequences
             loss_value = update_model(
@@ -295,6 +329,9 @@ def train(seed=42, num_episodes=500, lstm_hidden_size=128, seq_len=8,
 
         replay_buffer.end_episode()
         episode_rewards.append(total_reward)
+        
+        # Log episode end
+        logger.log_episode_end(total_steps, success=(total_reward > 0.9), metrics={"steps": step_count, "loss": loss_value})
 
         # Decay epsilon
         epsilon = max(epsilon_end, epsilon * epsilon_decay)
@@ -317,6 +354,8 @@ def train(seed=42, num_episodes=500, lstm_hidden_size=128, seq_len=8,
               f"Epsilon: {epsilon:.3f} | "
               f"Steps: {step_count} | Loss: N/A")
 
+    # Save logger
+    logger.save()
     env.close()
     return episode_rewards
 
@@ -326,16 +365,38 @@ def train(seed=42, num_episodes=500, lstm_hidden_size=128, seq_len=8,
 # ---------------------------------------------------------------------------
 
 def main():
-    seeds       = [42, 123, 7]   # 3 seeds as required by the assignment
-    num_episodes = 500
+    parser = argparse.ArgumentParser(description="Train DRQN on MiniGrid MemoryEnv")
+    parser.add_argument("--seed", type=int, default=42, help="Random seed")
+    parser.add_argument("--episodes", type=int, default=500, help="Number of training episodes")
+    parser.add_argument("--lstm-size", type=int, default=128, help="LSTM hidden size")
+    args = parser.parse_args()
+    
+    # Single-seed mode (when called with --seed argument)
+    if args.seed:
+        print(f"\n{'='*50}")
+        print(f"Training DRQN — Seed {args.seed}")
+        print(f"{'='*50}")
+        rewards = train(seed=args.seed, num_episodes=args.episodes, lstm_hidden_size=args.lstm_size)
+        print(f"\nTraining complete for seed {args.seed}")
+        return
+    
+    # Multi-seed mode (default: run 3 seeds and aggregate)
+    seeds       = [42, 123, 456]   # 3 seeds as required by the assignment
+    num_episodes = args.episodes
     all_rewards  = {}
 
     for seed in seeds:
         print(f"\n{'='*50}")
         print(f"Training DRQN — Seed {seed}")
         print(f"{'='*50}")
-        rewards = train(seed=seed, num_episodes=num_episodes)
+        rewards = train(seed=seed, num_episodes=num_episodes, lstm_hidden_size=args.lstm_size)
         all_rewards[seed] = rewards
+
+    # Aggregate and save results
+    aggregator = MultiSeedAggregator()
+    results = aggregator.load_seed_results("drqn_minigrid", seeds)
+    if results:
+        aggregator.save_aggregate_summary("drqn_minigrid", results)
 
     # ------------------------------------------------------------------
     # Plot: one curve per seed + a mean curve

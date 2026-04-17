@@ -1,5 +1,9 @@
 import sys
 import os
+
+# Fix OpenMP conflict between numpy, scipy, and torch
+os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
+
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 import torch
@@ -9,10 +13,12 @@ import numpy as np
 from collections import deque
 import matplotlib.pyplot as plt
 from tqdm import tqdm
+import argparse
 
 from models.dqn import DQN
 from models.replay_buffer import ReplayBuffer
 from utils.preprocessing import make_atari_env
+from utils.logging import ExperimentLogger
 
 
 class DQNAgent:
@@ -31,17 +37,20 @@ class DQNAgent:
         batch_size=32,
         target_update_freq=10_000,
         learning_starts=50_000,
+        seed=42,
         device='cuda' if torch.cuda.is_available() else 'cpu'
     ):
         self.env = env
         self.n_actions = env.action_space.n
         self.device = device
+        self.seed = seed
         
         # Hyperparameters
         self.gamma = gamma
         self.batch_size = batch_size
         self.target_update_freq = target_update_freq
         self.learning_starts = learning_starts
+        self.learning_rate = learning_rate
         
         # Epsilon-greedy parameters
         self.epsilon_start = epsilon_start
@@ -69,6 +78,26 @@ class DQNAgent:
         # Tracking
         self.steps = 0
         self.episodes = 0
+        
+        # Logger
+        config = {
+            "learning_rate": learning_rate,
+            "gamma": gamma,
+            "epsilon_start": epsilon_start,
+            "epsilon_end": epsilon_end,
+            "epsilon_decay": epsilon_decay,
+            "replay_buffer_size": replay_buffer_size,
+            "batch_size": batch_size,
+            "target_update_freq": target_update_freq,
+            "learning_starts": learning_starts,
+            "environment": "ALE/Pong-v5",
+        }
+        self.logger = ExperimentLogger(
+            log_dir="results/logs",
+            experiment_name="dqn_pong",
+            seed=seed,
+            config=config
+        )
         
     def select_action(self, state):
         """Select action using epsilon-greedy policy."""
@@ -165,6 +194,10 @@ class DQNAgent:
                 episode_lengths.append(episode_length)
                 self.episodes += 1
                 
+                # Log episode
+                self.logger.log_episode_start(self.episodes, self.steps - episode_length)
+                self.logger.log_episode_end(self.steps, success=None)
+                
                 pbar.set_postfix({
                     'Episode': self.episodes,
                     'Reward': f'{episode_reward:.1f}',
@@ -180,6 +213,7 @@ class DQNAgent:
             if self.steps % eval_freq == 0:
                 eval_reward = self.evaluate(n_episodes=10)
                 eval_rewards.append((self.steps, eval_reward))
+                self.logger.log_evaluation(self.steps, eval_reward, eval_episodes=10)
                 print(f"\nEvaluation at {self.steps} steps: {eval_reward:.2f}")
             
             # Save checkpoint
@@ -190,8 +224,9 @@ class DQNAgent:
         
         pbar.close()
         
-        # Save final model
+        # Save final model and logs
         self.save_checkpoint('checkpoints/dqn_pong_final.pth')
+        self.logger.save()
         
         # Plot results
         self.plot_results(episode_rewards, losses, eval_rewards)
@@ -283,8 +318,18 @@ class DQNAgent:
 
 
 def main():
+    parser = argparse.ArgumentParser(description="Train DQN on Atari Pong")
+    parser.add_argument("--seed", type=int, default=42, help="Random seed")
+    parser.add_argument("--episodes", type=int, default=None, help="Number of episodes")
+    parser.add_argument("--max-steps", type=int, default=10_000_000, help="Maximum training steps")
+    args = parser.parse_args()
+    
+    # Set seeds
+    np.random.seed(args.seed)
+    torch.manual_seed(args.seed)
+    
     # Create environment
-    env = make_atari_env('ALE/Pong-v5', seed=42)
+    env = make_atari_env('ALE/Pong-v5', seed=args.seed)
     
     # Create agent
     agent = DQNAgent(
@@ -297,15 +342,17 @@ def main():
         replay_buffer_size=1_000_000,
         batch_size=32,
         target_update_freq=10_000,
-        learning_starts=50_000
+        learning_starts=50_000,
+        seed=args.seed
     )
     
     print(f"Training on device: {agent.device}")
+    print(f"Random seed: {args.seed}")
     print(f"Number of actions: {agent.n_actions}")
     
     # Train
     agent.train(
-        num_frames=10_000_000,  # 10M frames (paper uses 50M)
+        num_frames=args.max_steps,
         eval_freq=100_000,
         save_freq=500_000
     )
