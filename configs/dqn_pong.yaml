@@ -1,0 +1,43 @@
+# DQN Pong Hyperparameters
+# Matches Mnih et al. (2015) Extended Data Table 1
+
+env:
+  name: "ALE/Pong-v5"
+  frame_skip: 4          # action repeat - handled automatically by ALE/Gymnasium
+  frame_stack: 4         # agent history length
+  grayscale: true
+  resize: 84
+
+training:
+  num_frames: 10_000_000     # paper uses 50M; scaled down for compute budget
+  learning_rate: 0.00025
+  gamma: 0.99
+  batch_size: 32
+  replay_buffer_size: 1_000_000
+  learning_starts: 50_000    # replay start size
+  target_update_freq: 10_000
+  update_frequency: 4        # SGD update every 4 actions
+
+exploration:
+  epsilon_start: 1.0
+  epsilon_end: 0.1
+  epsilon_decay_frames: 1_000_000
+
+optimizer:
+  name: RMSprop
+  alpha: 0.95              # gradient momentum
+  eps: 0.01                # min squared gradient
+
+evaluation:
+  eval_freq: 100_000
+  eval_episodes: 10
+  eval_epsilon: 0.05
+  save_freq: 500_000
+
+seeds: [42, 123, 7]
+
+# Divergences from original paper:
+# - Trained for 10M frames instead of 50M (compute budget)
+# - No no-op max (paper uses up to 30 random no-ops at episode start)
+# - Reward clipping to [-1, 1] is applied (matches paper)
+# - Frame skipping handled by ALE/Gymnasium automatically
