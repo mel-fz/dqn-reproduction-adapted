@@ -1,52 +1,43 @@
-# DQN Hyperparameters for Atari Pong
-# Based on "Human-level control through deep reinforcement learning" (Mnih et al., 2015)
+# DQN Pong Hyperparameters
+# Matches Mnih et al. (2015) Extended Data Table 1
 
-environment:
+env:
   name: "ALE/Pong-v5"
-  frame_stack: 4
-  screen_size: 84
-  noop_max: 30
-  frameskip: 4
+  frame_skip: 4          # action repeat - handled automatically by ALE/Gymnasium
+  frame_stack: 4         # agent history length
+  grayscale: true
+  resize: 84
 
 training:
-  total_timesteps: 10_000_000
-  episodes: 1000
+  num_frames: 10_000_000     # paper uses 50M; scaled down for compute budget
   learning_rate: 0.00025
   gamma: 0.99
   batch_size: 32
-  
-  # Epsilon-greedy exploration
+  replay_buffer_size: 1_000_000
+  learning_starts: 50_000    # replay start size
+  target_update_freq: 10_000
+  update_frequency: 4        # SGD update every 4 actions
+
+exploration:
   epsilon_start: 1.0
   epsilon_end: 0.1
-  epsilon_decay: 1_000_000  # Linear decay over 1M timesteps
-  
-  # Replay buffer
-  replay_buffer_size: 1_000_000
-  learning_starts: 50_000  # Start training after 50k frames
-  
-  # Target network update frequency
-  target_update_freq: 10_000
-  
-  # Gradient clipping
-  grad_norm_clip: 10.0
-
-model:
-  architecture: "conv2d"
-  hidden_size: 512
-  n_frames: 4
-  
-network:
-  conv_channels: [32, 64, 64]
-  conv_kernels: [8, 4, 3]
-  conv_strides: [4, 2, 1]
-  conv_padding: [0, 0, 0]
+  epsilon_decay_frames: 1_000_000
 
 optimizer:
-  name: "Adam"
-  betas: [0.9, 0.999]
-  eps: 1e-8
+  name: RMSprop
+  alpha: 0.95              # gradient momentum
+  eps: 0.01                # min squared gradient
 
-device: "cuda"
-seed: 42
-save_interval: 100000
-checkpoint_dir: "checkpoints"
+evaluation:
+  eval_freq: 100_000
+  eval_episodes: 10
+  eval_epsilon: 0.05
+  save_freq: 500_000
+
+seeds: [42, 123, 7]
+
+# Divergences from original paper:
+# - Trained for 10M frames instead of 50M (compute budget)
+# - No no-op max (paper uses up to 30 random no-ops at episode start)
+# - Reward clipping to [-1, 1] is applied (matches paper)
+# - Frame skipping handled by ALE/Gymnasium automatically

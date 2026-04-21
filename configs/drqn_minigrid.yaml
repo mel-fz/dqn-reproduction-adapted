@@ -1,59 +1,33 @@
-# DRQN Hyperparameters for MiniGrid MemoryEnv
-# Recurrent DQN with LSTM for partial observability
+# DRQN MiniGrid Hyperparameters
+# Adaptation of DQN to MiniGrid-MemoryS7-v0
 
-environment:
-  name: "MiniGrid-MemoryEnv-v0"
-  max_steps: 2048
-  image_size: 84
+env:
+  name: "MiniGrid-MemoryS7-v0"
+  input_shape: [3, 7, 7]   # (C, H, W) after transpose
 
 training:
-  total_timesteps: 5_000_000
-  episodes: 5000
-  learning_rate: 0.0001
+  num_episodes: 500
+  learning_rate: 0.001
   gamma: 0.99
   batch_size: 32
-  sequence_length: 32  # For unrolling LSTM trajectories
-  
-  # Epsilon-greedy exploration
+  buffer_capacity: 500     # stores full episodes, not transitions
+  seq_len: 8               # sequence length sampled for LSTM training
+  target_update_freq: 10   # episodes
+
+exploration:
   epsilon_start: 1.0
-  epsilon_end: 0.05
-  epsilon_decay: 500_000  # Decay over 500k timesteps
-  
-  # Replay buffer
-  replay_buffer_size: 500_000
-  learning_starts: 10_000
-  
-  # Target network update frequency
-  target_update_freq: 5_000
-  
-  # Gradient clipping
-  grad_norm_clip: 10.0
+  epsilon_end: 0.1
+  epsilon_decay: 0.995     # multiplicative per episode
 
 model:
-  architecture: "recurrent_dqn"
-  hidden_size: 256
-  lstm_size: 256
-  lstm_layers: 1
-  dueling: False  # Standard DRQN without dueling
-  n_frames: 1  # MiniGrid returns full observe dict, not frame-stacked
-  
-network:
-  conv_channels: [32, 64]
-  conv_kernels: [3, 3]
-  conv_strides: [1, 1]
-  conv_padding: [1, 1]
+  lstm_hidden_size: 128
 
-optimizer:
-  name: "Adam"
-  betas: [0.9, 0.999]
-  eps: 1e-8
+seeds: [42, 123, 7]
 
-device: "cuda"
-seed: 42
-save_interval: 50000
-checkpoint_dir: "checkpoints"
-
-# DRQN-specific settings
-recurrent:
-  burn_in_steps: 8  # Steps to burn-in LSTM state before computing loss
-  overlap: 4  # Overlap between sequences for better temporal continuity
+# Why DRQN instead of DQN:
+# MiniGrid-MemoryS7 is partially observable - the agent sees only a 7x7
+# local view. It must remember an object seen at the start of the corridor
+# and act on that memory at the end. A feedforward DQN has no memory
+# mechanism and will plateau/fail. The LSTM hidden state carries information
+# forward across timesteps within an episode, enabling the agent to
+# remember what it saw earlier.

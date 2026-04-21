@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+import numpy as np
 
 class DQN(nn.Module):
     """
@@ -99,4 +100,3 @@ class DQN(nn.Module):
                 return action
 
 
-import numpy as np
