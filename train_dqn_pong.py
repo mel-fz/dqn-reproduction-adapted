@@ -1,9 +1,5 @@
 import sys
 import os
-
-# Fix OpenMP conflict between numpy, scipy, and torch
-os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
-
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 import torch
@@ -13,12 +9,10 @@ import numpy as np
 from collections import deque
 import matplotlib.pyplot as plt
 from tqdm import tqdm
-import argparse
 
 from models.dqn import DQN
 from models.replay_buffer import ReplayBuffer
 from utils.preprocessing import make_atari_env
-from utils.logging import ExperimentLogger
 
 
 class DQNAgent:
@@ -30,22 +24,21 @@ class DQNAgent:
         epsilon_start=1.0,
         epsilon_end=0.1,
         epsilon_decay=1_000_000,
-        replay_buffer_size=1_000_000,
+        replay_buffer_size=100_000,
         batch_size=32,
         target_update_freq=10_000,
-        learning_starts=50_000,
-        seed=42,
+        learning_starts=10_000,
         device='cuda' if torch.cuda.is_available() else 'cpu'
     ):
         self.env = env
         self.n_actions = env.action_space.n
         self.device = device
-        self.seed = seed
+
         self.gamma = gamma
         self.batch_size = batch_size
         self.target_update_freq = target_update_freq
         self.learning_starts = learning_starts
-        self.learning_rate = learning_rate
+
         self.epsilon_start = epsilon_start
         self.epsilon_end = epsilon_end
         self.epsilon_decay = epsilon_decay
@@ -66,25 +59,6 @@ class DQNAgent:
         self.replay_buffer = ReplayBuffer(replay_buffer_size)
         self.steps = 0
         self.episodes = 0
-
-        config = {
-            "learning_rate": learning_rate,
-            "gamma": gamma,
-            "epsilon_start": epsilon_start,
-            "epsilon_end": epsilon_end,
-            "epsilon_decay": epsilon_decay,
-            "replay_buffer_size": replay_buffer_size,
-            "batch_size": batch_size,
-            "target_update_freq": target_update_freq,
-            "learning_starts": learning_starts,
-            "environment": "ALE/Pong-v5",
-        }
-        self.logger = ExperimentLogger(
-            log_dir="results/logs",
-            experiment_name="dqn_pong",
-            seed=seed,
-            config=config
-        )
 
     def select_action(self, state):
         self.epsilon = max(
@@ -120,34 +94,26 @@ class DQNAgent:
 
         return loss.item()
 
-    def train(self, num_frames=10_000_000, eval_freq=100_000, save_freq=500_000, seed=42):
+    def train(self, num_frames=500_000, eval_freq=50_000, save_freq=250_000, seed=42):
         episode_rewards = []
-        win_rates       = []   # task-specific metric: fraction of points won per episode
+        win_rates       = []
         losses          = []
         eval_rewards    = []
 
         state, _ = self.env.reset()
         episode_reward = 0
-        episode_length = 0
+        points_won     = 0
+        points_lost    = 0
 
-        # Pong win rate tracking: reward +1 = point won, -1 = point lost
-        points_won  = 0
-        points_lost = 0
-
-        pbar = tqdm(total=num_frames, desc=f"Training seed={seed}")
+        pbar = tqdm(total=num_frames, desc=f"Seed={seed}")
 
         while self.steps < num_frames:
             action = self.select_action(state)
             next_state, reward, terminated, truncated, _ = self.env.step(action)
             done = terminated or truncated
 
-            # --- Reward clipping (Mnih et al. 2015) ---
-            # Clip to [-1, 1] to keep error derivatives bounded.
-            # For Pong rewards are already +1/-1 naturally, but we do this
-            # to match the paper exactly.
             clipped_reward = np.clip(reward, -1, 1)
 
-            # Track raw points for win rate before clipping
             if reward > 0:
                 points_won += 1
             elif reward < 0:
@@ -156,8 +122,7 @@ class DQNAgent:
             self.replay_buffer.push(state, action, clipped_reward, next_state, done)
 
             state           = next_state
-            episode_reward += reward     # track unclipped for plotting
-            episode_length += 1
+            episode_reward += reward
             self.steps     += 1
 
             loss = self.update()
@@ -169,33 +134,27 @@ class DQNAgent:
 
             if done:
                 episode_rewards.append(episode_reward)
-
-                # Win rate = fraction of scored points that were wins
                 total_points = points_won + points_lost
                 win_rate = points_won / total_points if total_points > 0 else 0.0
                 win_rates.append(win_rate)
-
                 self.episodes += 1
-                self.logger.log_episode_start(self.episodes, self.steps - episode_length)
-                self.logger.log_episode_end(self.steps, success=None)
+
                 pbar.set_postfix({
-                    'Episode': self.episodes,
-                    'Reward':  f'{episode_reward:.1f}',
-                    'WinRate': f'{win_rate:.2f}',
-                    'Epsilon': f'{self.epsilon:.3f}',
+                    'Ep':  self.episodes,
+                    'R':   f'{episode_reward:.0f}',
+                    'WR':  f'{win_rate:.2f}',
+                    'eps': f'{self.epsilon:.3f}',
                 })
 
                 state          = self.env.reset()[0]
                 episode_reward = 0
-                episode_length = 0
                 points_won     = 0
                 points_lost    = 0
 
             if self.steps % eval_freq == 0:
                 eval_reward = self.evaluate()
                 eval_rewards.append((self.steps, eval_reward))
-                self.logger.log_evaluation(self.steps, eval_reward, eval_episodes=10)
-                print(f"\nEvaluation at {self.steps} steps: {eval_reward:.2f}")
+                print(f"\nEval @ {self.steps}: {eval_reward:.2f}")
 
             if self.steps % save_freq == 0:
                 os.makedirs('checkpoints', exist_ok=True)
@@ -205,15 +164,13 @@ class DQNAgent:
 
         pbar.close()
         os.makedirs('checkpoints', exist_ok=True)
-        self.save_checkpoint(f'checkpoints/dqn_pong_seed{self.seed}_final.pth')
-        self.logger.save()
+        self.save_checkpoint(f'checkpoints/dqn_pong_seed{seed}_final.pth')
 
         return episode_rewards, win_rates, losses, eval_rewards
 
-    def evaluate(self, n_episodes=10):
+    def evaluate(self, n_episodes=5):
         self.policy_net.eval()
         total_reward = 0
-
         for _ in range(n_episodes):
             state, _ = self.env.reset()
             done = False
@@ -225,62 +182,45 @@ class DQNAgent:
                 done = terminated or truncated
                 ep_reward += reward
             total_reward += ep_reward
-
         self.policy_net.train()
         return total_reward / n_episodes
 
     def save_checkpoint(self, path):
         torch.save({
-            'steps':                    self.steps,
-            'episodes':                 self.episodes,
-            'policy_net_state_dict':    self.policy_net.state_dict(),
-            'target_net_state_dict':    self.target_net.state_dict(),
-            'optimizer_state_dict':     self.optimizer.state_dict(),
-            'epsilon':                  self.epsilon,
+            'steps':                 self.steps,
+            'episodes':              self.episodes,
+            'policy_net_state_dict': self.policy_net.state_dict(),
+            'target_net_state_dict': self.target_net.state_dict(),
+            'optimizer_state_dict':  self.optimizer.state_dict(),
+            'epsilon':               self.epsilon,
         }, path)
-        print(f"Checkpoint saved to {path}")
+        print(f"Saved: {path}")
 
 
-# ---------------------------------------------------------------------------
-# Multi-seed training + plotting
-# ---------------------------------------------------------------------------
-
-def run_seed(seed, num_frames=10_000_000):
-    """Train one seed and return results."""
+def run_seed(seed, num_frames=500_000):
     torch.manual_seed(seed)
     np.random.seed(seed)
 
     env   = make_atari_env('ALE/Pong-v5', seed=seed)
-    agent = DQNAgent(env=env, seed=seed)
+    agent = DQNAgent(env=env)
 
     print(f"\n{'='*50}")
     print(f"Training DQN on Pong — Seed {seed}")
     print(f"Device: {agent.device} | Actions: {agent.n_actions}")
     print(f"{'='*50}")
 
-    episode_rewards, win_rates, losses, eval_rewards = agent.train(
-        num_frames=num_frames,
-        eval_freq=100_000,
-        save_freq=500_000,
-        seed=seed,
-    )
+    results = agent.train(num_frames=num_frames, seed=seed)
     env.close()
-    return episode_rewards, win_rates, losses, eval_rewards
+    return results
 
 
 def plot_multiseed_results(all_results, seeds):
-    """
-    Plot training curves across all seeds.
-    Produces two figures:
-      1. Episode reward (smoothed) per seed + mean
-      2. Win rate (smoothed) per seed + mean
-    """
     os.makedirs('results', exist_ok=True)
-    window = 100
+    window = 20
 
     fig, axes = plt.subplots(1, 2, figsize=(16, 5))
 
-    reward_smoothed_all = []
+    reward_smoothed_all  = []
     winrate_smoothed_all = []
 
     for seed, (ep_rewards, win_rates, _, _) in zip(seeds, all_results):
@@ -293,14 +233,11 @@ def plot_multiseed_results(all_results, seeds):
 
         reward_smoothed_all.append(sr)
         winrate_smoothed_all.append(sw)
-
         axes[0].plot(sr, alpha=0.4, label=f'Seed {seed}')
         axes[1].plot(sw, alpha=0.4, label=f'Seed {seed}')
 
-    # Mean across seeds
-    min_r = min(len(s) for s in reward_smoothed_all)
-    min_w = min(len(s) for s in winrate_smoothed_all)
-
+    min_r  = min(len(s) for s in reward_smoothed_all)
+    min_w  = min(len(s) for s in winrate_smoothed_all)
     mean_r = np.mean([s[:min_r] for s in reward_smoothed_all], axis=0)
     mean_w = np.mean([s[:min_w] for s in winrate_smoothed_all], axis=0)
 
@@ -323,8 +260,8 @@ def plot_multiseed_results(all_results, seeds):
 
 
 def main():
-    seeds      = [42, 123, 456]
-    num_frames = 10_000_000
+    seeds       = [42, 123, 7]
+    num_frames  = 500_000
     all_results = []
 
     for seed in seeds:
@@ -333,10 +270,10 @@ def main():
 
         os.makedirs('results', exist_ok=True)
         ep_rewards, win_rates, losses, eval_rewards = results
-        np.save(f'results/pong_seed{seed}_rewards.npy',    np.array(ep_rewards))
-        np.save(f'results/pong_seed{seed}_winrates.npy',   np.array(win_rates))
-        np.save(f'results/pong_seed{seed}_eval.npy',       np.array(eval_rewards))
-        print(f"Seed {seed} results saved.")
+        np.save(f'results/pong_seed{seed}_rewards.npy',  np.array(ep_rewards))
+        np.save(f'results/pong_seed{seed}_winrates.npy', np.array(win_rates))
+        np.save(f'results/pong_seed{seed}_eval.npy',     np.array(eval_rewards))
+        print(f"Seed {seed} done.")
 
     plot_multiseed_results(all_results, seeds)
 
