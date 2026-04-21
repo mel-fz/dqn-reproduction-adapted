@@ -91,7 +91,8 @@ class DQN(nn.Module):
             with torch.no_grad():
                 # Add batch dimension if needed
                 if state.ndim == 3:
-                    state = torch.FloatTensor(state).unsqueeze(0)
+                    device = next(self.parameters()).device
+                    state = torch.FloatTensor(state).unsqueeze(0).to(device)
                 else:
                     state = torch.FloatTensor(state)
                 
