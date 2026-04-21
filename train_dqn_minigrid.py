@@ -154,7 +154,8 @@ def main():
         epsilon = max(epsilon_end, epsilon * epsilon_decay)
         
         # Log episode end
-        logger.log_episode_end(total_steps, success=(total_reward > 0.9), metrics={"steps": step_count})
+        logger.log_episode_step(total_reward, step_count)
+        logger.log_episode_end(total_steps, success=(total_reward > 0), metrics={"steps": step_count})
 
         if episode % target_update_freq == 0:
             target_net.load_state_dict(policy_net.state_dict())

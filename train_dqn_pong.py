@@ -323,7 +323,7 @@ def plot_multiseed_results(all_results, seeds):
 
 
 def main():
-    seeds      = [42, 123, 7]
+    seeds      = [42, 123, 456]
     num_frames = 10_000_000
     all_results = []
 

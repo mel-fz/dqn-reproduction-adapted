@@ -331,7 +331,8 @@ def train(seed=42, num_episodes=500, lstm_hidden_size=128, seq_len=8,
         episode_rewards.append(total_reward)
         
         # Log episode end
-        logger.log_episode_end(total_steps, success=(total_reward > 0.9), metrics={"steps": step_count, "loss": loss_value})
+        logger.log_episode_step(total_reward, step_count)
+        logger.log_episode_end(total_steps, success=(total_reward > 0), metrics={"steps": step_count, "loss": loss_value})
 
         # Decay epsilon
         epsilon = max(epsilon_end, epsilon * epsilon_decay)
@@ -366,13 +367,13 @@ def train(seed=42, num_episodes=500, lstm_hidden_size=128, seq_len=8,
 
 def main():
     parser = argparse.ArgumentParser(description="Train DRQN on MiniGrid MemoryEnv")
-    parser.add_argument("--seed", type=int, default=42, help="Random seed")
+    parser.add_argument("--seed", type=int, default=None, help="Random seed (omit to run all 3 seeds)")
     parser.add_argument("--episodes", type=int, default=500, help="Number of training episodes")
     parser.add_argument("--lstm-size", type=int, default=128, help="LSTM hidden size")
     args = parser.parse_args()
-    
+
     # Single-seed mode (when called with --seed argument)
-    if args.seed:
+    if args.seed is not None:
         print(f"\n{'='*50}")
         print(f"Training DRQN — Seed {args.seed}")
         print(f"{'='*50}")

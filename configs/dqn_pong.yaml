@@ -34,7 +34,7 @@ evaluation:
   eval_epsilon: 0.05
   save_freq: 500_000
 
-seeds: [42, 123, 7]
+seeds: [42, 123, 456]
 
 # Divergences from original paper:
 # - Trained for 10M frames instead of 50M (compute budget)
