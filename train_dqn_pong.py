@@ -94,7 +94,7 @@ class DQNAgent:
 
         return loss.item()
 
-    def train(self, num_frames=500_000, eval_freq=50_000, save_freq=250_000, seed=42):
+    def train(self, num_frames=500_000, num_episodes=None, eval_freq=50_000, save_freq=250_000, seed=42):
         episode_rewards = []
         win_rates       = []
         losses          = []
@@ -107,7 +107,7 @@ class DQNAgent:
 
         pbar = tqdm(total=num_frames, desc=f"Seed={seed}")
 
-        while self.steps < num_frames:
+        while self.steps < num_frames and (num_episodes is None or self.episodes < num_episodes):
             action = self.select_action(state)
             next_state, reward, terminated, truncated, _ = self.env.step(action)
             done = terminated or truncated
@@ -197,7 +197,7 @@ class DQNAgent:
         print(f"Saved: {path}")
 
 
-def run_seed(seed, num_frames=500_000):
+def run_seed(seed, num_frames=500_000, num_episodes=None):
     torch.manual_seed(seed)
     np.random.seed(seed)
 
@@ -209,7 +209,7 @@ def run_seed(seed, num_frames=500_000):
     print(f"Device: {agent.device} | Actions: {agent.n_actions}")
     print(f"{'='*50}")
 
-    results = agent.train(num_frames=num_frames, seed=seed)
+    results = agent.train(num_frames=num_frames, num_episodes=num_episodes, seed=seed)
     env.close()
     return results
 
@@ -261,11 +261,12 @@ def plot_multiseed_results(all_results, seeds):
 
 def main():
     seeds       = [42, 123, 7]
+    num_episodes = 100          # stop after this many episodes per seed (set to None to use num_frames instead)
     num_frames  = 500_000
     all_results = []
 
     for seed in seeds:
-        results = run_seed(seed, num_frames=num_frames)
+        results = run_seed(seed, num_frames=num_frames, num_episodes=num_episodes)
         all_results.append(results)
 
         os.makedirs('results', exist_ok=True)
