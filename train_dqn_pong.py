@@ -261,7 +261,7 @@ def plot_multiseed_results(all_results, seeds):
 
 def main():
     seeds       = [42, 123, 7]
-    num_episodes = 100          # stop after this many episodes per seed (set to None to use num_frames instead)
+    num_episodes = 1500         # stop after this many episodes per seed (set to None to use num_frames instead)
     num_frames  = 500_000
     all_results = []
 
