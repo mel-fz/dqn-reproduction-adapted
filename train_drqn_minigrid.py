@@ -276,7 +276,7 @@ def train(seed=42, num_episodes=500, lstm_hidden_size=128, seq_len=8,
     }
     logger = ExperimentLogger(
         log_dir="results/logs",
-        experiment_name="drqn_minigrid",
+        experiment_name=f"drqn_minigrid_lstm{lstm_hidden_size}",
         seed=seed,
         config=config
     )
@@ -395,9 +395,10 @@ def main():
 
     # Aggregate and save results
     aggregator = MultiSeedAggregator()
-    results = aggregator.load_seed_results("drqn_minigrid", seeds)
+    exp_name = f"drqn_minigrid_lstm{args.lstm_size}"
+    results = aggregator.load_seed_results(exp_name, seeds)
     if results:
-        aggregator.save_aggregate_summary("drqn_minigrid", results)
+        aggregator.save_aggregate_summary(exp_name, results)
 
     # ------------------------------------------------------------------
     # Plot: one curve per seed + a mean curve
