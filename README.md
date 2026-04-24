@@ -53,6 +53,44 @@ python train_drqn_minigrid.py --seed 42 --episodes 5000 --lstm-size 256
 ```
 python evaluate.py --model checkpoints/dqn_pong_final.pth --episodes 100
 ```
+## Hyperparameters
+
+### MiniGrid DQN Baseline (feed-forward)
+
+| Hyperparameter | Value |
+|---|---|
+| Environment | MiniGrid-MemoryS7-v0 |
+| Input shape | (3, 7, 7) — C, H, W |
+| Optimizer | Adam |
+| Learning rate | 0.001 |
+| Discount (γ) | 0.99 |
+| Batch size | 32 |
+| Replay buffer | 10,000 transitions |
+| ε start → end | 1.0 → 0.1 |
+| ε decay | 0.995 per episode |
+| Target update freq | every 10 episodes |
+| Episodes | 500 |
+| Seeds | 42, 123, 456 |
+
+### MiniGrid DRQN (recurrent)
+
+| Hyperparameter | Value |
+|---|---|
+| Environment | MiniGrid-MemoryS7-v0 |
+| Input shape | (3, 7, 7) — C, H, W |
+| Optimizer | Adam |
+| Learning rate | 0.001 |
+| Discount (γ) | 0.99 |
+| Batch size | 32 |
+| Replay buffer | 500 episodes |
+| Sequence length | 8 |
+| LSTM hidden size | 128 (ablation: 64, 128, 256) |
+| ε start → end | 1.0 → 0.1 |
+| ε decay | 0.995 per episode |
+| Target update freq | every 10 episodes |
+| Episodes | 500 |
+| Seeds | 42, 123, 456 |
+
 ## Results
 Results include learning curves, success rates, and qualitative demonstrations comparing vanilla DQN performance on Pong versus memory-augmented DQN on memory-dependent tasks.
 

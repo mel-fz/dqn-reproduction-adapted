@@ -63,10 +63,14 @@ def main():
     parser.add_argument("--out", default="results/minigrid_comparison.png")
     parser.add_argument("--window", type=int, default=20,
                         help="Smoothing window in episodes (default: 20)")
+    parser.add_argument("--lstm-size", type=int, default=128,
+                        help="LSTM size of the DRQN run to compare (default: 128)")
     args = parser.parse_args()
 
     dqn_r, dqn_s, dqn_seeds = load_experiment(args.log_dir, "dqn_minigrid", args.seeds)
-    drqn_r, drqn_s, drqn_seeds = load_experiment(args.log_dir, "drqn_minigrid", args.seeds)
+    drqn_r, drqn_s, drqn_seeds = load_experiment(
+        args.log_dir, f"drqn_minigrid_lstm{args.lstm_size}", args.seeds
+    )
 
     if not dqn_r and not drqn_r:
         print("No log files found. Run experiments first with run_experiments.py.")

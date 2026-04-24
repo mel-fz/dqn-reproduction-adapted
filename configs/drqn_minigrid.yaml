@@ -22,7 +22,7 @@ exploration:
 model:
   lstm_hidden_size: 128
 
-seeds: [42, 123, 7]
+seeds: [42, 123, 456]
 
 # Why DRQN instead of DQN:
 # MiniGrid-MemoryS7 is partially observable - the agent sees only a 7x7
