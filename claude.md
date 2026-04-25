@@ -53,3 +53,9 @@ Minimum evaluation evidence
 • One comparison showing the adapted method on that same environment.
 • At least one ablation isolating the main design change.
 
+{
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  }
+}

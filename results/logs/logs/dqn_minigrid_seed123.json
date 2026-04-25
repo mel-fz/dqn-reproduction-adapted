@@ -1,7 +1,7 @@
 {
   "metadata": {
     "experiment_name": "dqn_minigrid",
-    "seed": 42,
+    "seed": 123,
     "config": {
       "learning_rate": 0.001,
       "gamma": 0.99,
@@ -19,29 +19,40 @@
     {
       "episode": 1,
       "step_start": 0,
-      "step_end": 245,
+      "step_end": 21,
       "reward": 0.0,
-      "length": 245,
+      "length": 21,
       "success": false,
       "metrics": {
-        "steps": 245
+        "steps": 21
       }
     },
     {
       "episode": 2,
-      "step_start": 245,
-      "step_end": 322,
+      "step_start": 21,
+      "step_end": 123,
       "reward": 0.0,
-      "length": 77,
+      "length": 102,
       "success": false,
       "metrics": {
-        "steps": 77
+        "steps": 102
       }
     },
     {
       "episode": 3,
-      "step_start": 322,
-      "step_end": 567,
+      "step_start": 123,
+      "step_end": 137,
+      "reward": 0.0,
+      "length": 14,
+      "success": false,
+      "metrics": {
+        "steps": 14
+      }
+    },
+    {
+      "episode": 4,
+      "step_start": 137,
+      "step_end": 382,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -50,20 +61,9 @@
       }
     },
     {
-      "episode": 4,
-      "step_start": 567,
-      "step_end": 636,
-      "reward": 0.746530612244898,
-      "length": 69,
-      "success": true,
-      "metrics": {
-        "steps": 69
-      }
-    },
-    {
       "episode": 5,
-      "step_start": 636,
-      "step_end": 881,
+      "step_start": 382,
+      "step_end": 627,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -73,19 +73,19 @@
     },
     {
       "episode": 6,
-      "step_start": 881,
-      "step_end": 1037,
-      "reward": 0.4269387755102041,
-      "length": 156,
-      "success": true,
+      "step_start": 627,
+      "step_end": 872,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 156
+        "steps": 245
       }
     },
     {
       "episode": 7,
-      "step_start": 1037,
-      "step_end": 1282,
+      "step_start": 872,
+      "step_end": 1117,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -95,30 +95,30 @@
     },
     {
       "episode": 8,
-      "step_start": 1282,
-      "step_end": 1300,
+      "step_start": 1117,
+      "step_end": 1131,
       "reward": 0.0,
-      "length": 18,
+      "length": 14,
       "success": false,
       "metrics": {
-        "steps": 18
+        "steps": 14
       }
     },
     {
       "episode": 9,
-      "step_start": 1300,
-      "step_end": 1375,
-      "reward": 0.7244897959183674,
-      "length": 75,
+      "step_start": 1131,
+      "step_end": 1173,
+      "reward": 0.8457142857142856,
+      "length": 42,
       "success": true,
       "metrics": {
-        "steps": 75
+        "steps": 42
       }
     },
     {
       "episode": 10,
-      "step_start": 1375,
-      "step_end": 1620,
+      "step_start": 1173,
+      "step_end": 1418,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -128,8 +128,8 @@
     },
     {
       "episode": 11,
-      "step_start": 1620,
-      "step_end": 1865,
+      "step_start": 1418,
+      "step_end": 1663,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -139,85 +139,85 @@
     },
     {
       "episode": 12,
-      "step_start": 1865,
-      "step_end": 2110,
-      "reward": 0.0,
-      "length": 245,
-      "success": false,
+      "step_start": 1663,
+      "step_end": 1728,
+      "reward": 0.7612244897959184,
+      "length": 65,
+      "success": true,
       "metrics": {
-        "steps": 245
+        "steps": 65
       }
     },
     {
       "episode": 13,
-      "step_start": 2110,
-      "step_end": 2169,
-      "reward": 0.7832653061224489,
-      "length": 59,
-      "success": true,
+      "step_start": 1728,
+      "step_end": 1973,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 59
+        "steps": 245
       }
     },
     {
       "episode": 14,
-      "step_start": 2169,
-      "step_end": 2414,
+      "step_start": 1973,
+      "step_end": 2080,
       "reward": 0.0,
-      "length": 245,
+      "length": 107,
       "success": false,
       "metrics": {
-        "steps": 245
+        "steps": 107
       }
     },
     {
       "episode": 15,
-      "step_start": 2414,
-      "step_end": 2446,
-      "reward": 0.8824489795918368,
-      "length": 32,
+      "step_start": 2080,
+      "step_end": 2122,
+      "reward": 0.8457142857142856,
+      "length": 42,
       "success": true,
       "metrics": {
-        "steps": 32
+        "steps": 42
       }
     },
     {
       "episode": 16,
-      "step_start": 2446,
-      "step_end": 2499,
+      "step_start": 2122,
+      "step_end": 2367,
       "reward": 0.0,
-      "length": 53,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 53
+        "steps": 245
       }
     },
     {
       "episode": 17,
-      "step_start": 2499,
-      "step_end": 2744,
+      "step_start": 2367,
+      "step_end": 2387,
       "reward": 0.0,
-      "length": 245,
+      "length": 20,
       "success": false,
       "metrics": {
-        "steps": 245
+        "steps": 20
       }
     },
     {
       "episode": 18,
-      "step_start": 2744,
-      "step_end": 2989,
-      "reward": 0.0,
-      "length": 245,
-      "success": false,
+      "step_start": 2387,
+      "step_end": 2412,
+      "reward": 0.9081632653061225,
+      "length": 25,
+      "success": true,
       "metrics": {
-        "steps": 245
+        "steps": 25
       }
     },
     {
       "episode": 19,
-      "step_start": 2989,
-      "step_end": 3234,
+      "step_start": 2412,
+      "step_end": 2657,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -227,19 +227,19 @@
     },
     {
       "episode": 20,
-      "step_start": 3234,
-      "step_end": 3248,
+      "step_start": 2657,
+      "step_end": 2888,
       "reward": 0.0,
-      "length": 14,
+      "length": 231,
       "success": false,
       "metrics": {
-        "steps": 14
+        "steps": 231
       }
     },
     {
       "episode": 21,
-      "step_start": 3248,
-      "step_end": 3493,
+      "step_start": 2888,
+      "step_end": 3133,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -249,8 +249,8 @@
     },
     {
       "episode": 22,
-      "step_start": 3493,
-      "step_end": 3738,
+      "step_start": 3133,
+      "step_end": 3378,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -260,63 +260,63 @@
     },
     {
       "episode": 23,
-      "step_start": 3738,
-      "step_end": 3771,
-      "reward": 0.8787755102040816,
-      "length": 33,
-      "success": true,
+      "step_start": 3378,
+      "step_end": 3623,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 33
+        "steps": 245
       }
     },
     {
       "episode": 24,
-      "step_start": 3771,
-      "step_end": 3848,
+      "step_start": 3623,
+      "step_end": 3847,
       "reward": 0.0,
-      "length": 77,
+      "length": 224,
       "success": false,
       "metrics": {
-        "steps": 77
+        "steps": 224
       }
     },
     {
       "episode": 25,
-      "step_start": 3848,
-      "step_end": 4093,
+      "step_start": 3847,
+      "step_end": 3862,
       "reward": 0.0,
-      "length": 245,
+      "length": 15,
       "success": false,
       "metrics": {
-        "steps": 245
+        "steps": 15
       }
     },
     {
       "episode": 26,
-      "step_start": 4093,
-      "step_end": 4338,
+      "step_start": 3862,
+      "step_end": 3886,
       "reward": 0.0,
-      "length": 245,
+      "length": 24,
       "success": false,
       "metrics": {
-        "steps": 245
+        "steps": 24
       }
     },
     {
       "episode": 27,
-      "step_start": 4338,
-      "step_end": 4583,
+      "step_start": 3886,
+      "step_end": 3892,
       "reward": 0.0,
-      "length": 245,
+      "length": 6,
       "success": false,
       "metrics": {
-        "steps": 245
+        "steps": 6
       }
     },
     {
       "episode": 28,
-      "step_start": 4583,
-      "step_end": 4828,
+      "step_start": 3892,
+      "step_end": 4137,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -326,85 +326,85 @@
     },
     {
       "episode": 29,
-      "step_start": 4828,
-      "step_end": 4990,
-      "reward": 0.0,
-      "length": 162,
-      "success": false,
+      "step_start": 4137,
+      "step_end": 4217,
+      "reward": 0.7061224489795919,
+      "length": 80,
+      "success": true,
       "metrics": {
-        "steps": 162
+        "steps": 80
       }
     },
     {
       "episode": 30,
-      "step_start": 4990,
-      "step_end": 5196,
-      "reward": 0.243265306122449,
-      "length": 206,
+      "step_start": 4217,
+      "step_end": 4243,
+      "reward": 0.9044897959183673,
+      "length": 26,
       "success": true,
       "metrics": {
-        "steps": 206
+        "steps": 26
       }
     },
     {
       "episode": 31,
-      "step_start": 5196,
-      "step_end": 5354,
-      "reward": 0.4195918367346939,
-      "length": 158,
-      "success": true,
+      "step_start": 4243,
+      "step_end": 4488,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 158
+        "steps": 245
       }
     },
     {
       "episode": 32,
-      "step_start": 5354,
-      "step_end": 5514,
-      "reward": 0.0,
-      "length": 160,
-      "success": false,
+      "step_start": 4488,
+      "step_end": 4614,
+      "reward": 0.5371428571428571,
+      "length": 126,
+      "success": true,
       "metrics": {
-        "steps": 160
+        "steps": 126
       }
     },
     {
       "episode": 33,
-      "step_start": 5514,
-      "step_end": 5518,
-      "reward": 0.0,
-      "length": 4,
-      "success": false,
+      "step_start": 4614,
+      "step_end": 4760,
+      "reward": 0.463673469387755,
+      "length": 146,
+      "success": true,
       "metrics": {
-        "steps": 4
+        "steps": 146
       }
     },
     {
       "episode": 34,
-      "step_start": 5518,
-      "step_end": 5526,
-      "reward": 0.9706122448979592,
-      "length": 8,
+      "step_start": 4760,
+      "step_end": 4794,
+      "reward": 0.8751020408163266,
+      "length": 34,
       "success": true,
       "metrics": {
-        "steps": 8
+        "steps": 34
       }
     },
     {
       "episode": 35,
-      "step_start": 5526,
-      "step_end": 5569,
+      "step_start": 4794,
+      "step_end": 4916,
       "reward": 0.0,
-      "length": 43,
+      "length": 122,
       "success": false,
       "metrics": {
-        "steps": 43
+        "steps": 122
       }
     },
     {
       "episode": 36,
-      "step_start": 5569,
-      "step_end": 5814,
+      "step_start": 4916,
+      "step_end": 5161,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -414,74 +414,52 @@
     },
     {
       "episode": 37,
-      "step_start": 5814,
-      "step_end": 5822,
+      "step_start": 5161,
+      "step_end": 5406,
       "reward": 0.0,
-      "length": 8,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 8
+        "steps": 245
       }
     },
     {
       "episode": 38,
-      "step_start": 5822,
-      "step_end": 5992,
+      "step_start": 5406,
+      "step_end": 5472,
       "reward": 0.0,
-      "length": 170,
+      "length": 66,
       "success": false,
       "metrics": {
-        "steps": 170
+        "steps": 66
       }
     },
     {
       "episode": 39,
-      "step_start": 5992,
-      "step_end": 6163,
-      "reward": 0.0,
-      "length": 171,
-      "success": false,
+      "step_start": 5472,
+      "step_end": 5560,
+      "reward": 0.676734693877551,
+      "length": 88,
+      "success": true,
       "metrics": {
-        "steps": 171
+        "steps": 88
       }
     },
     {
       "episode": 40,
-      "step_start": 6163,
-      "step_end": 6408,
-      "reward": 0.0,
-      "length": 245,
-      "success": false,
+      "step_start": 5560,
+      "step_end": 5620,
+      "reward": 0.7795918367346939,
+      "length": 60,
+      "success": true,
       "metrics": {
-        "steps": 245
+        "steps": 60
       }
     },
     {
       "episode": 41,
-      "step_start": 6408,
-      "step_end": 6433,
-      "reward": 0.9081632653061225,
-      "length": 25,
-      "success": true,
-      "metrics": {
-        "steps": 25
-      }
-    },
-    {
-      "episode": 42,
-      "step_start": 6433,
-      "step_end": 6450,
-      "reward": 0.0,
-      "length": 17,
-      "success": false,
-      "metrics": {
-        "steps": 17
-      }
-    },
-    {
-      "episode": 43,
-      "step_start": 6450,
-      "step_end": 6695,
+      "step_start": 5620,
+      "step_end": 5865,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -490,31 +468,53 @@
       }
     },
     {
-      "episode": 44,
-      "step_start": 6695,
-      "step_end": 6703,
-      "reward": 0.9706122448979592,
-      "length": 8,
+      "episode": 42,
+      "step_start": 5865,
+      "step_end": 5929,
+      "reward": 0.7648979591836734,
+      "length": 64,
       "success": true,
       "metrics": {
-        "steps": 8
+        "steps": 64
+      }
+    },
+    {
+      "episode": 43,
+      "step_start": 5929,
+      "step_end": 6034,
+      "reward": 0.0,
+      "length": 105,
+      "success": false,
+      "metrics": {
+        "steps": 105
+      }
+    },
+    {
+      "episode": 44,
+      "step_start": 6034,
+      "step_end": 6046,
+      "reward": 0.0,
+      "length": 12,
+      "success": false,
+      "metrics": {
+        "steps": 12
       }
     },
     {
       "episode": 45,
-      "step_start": 6703,
-      "step_end": 6789,
-      "reward": 0.6840816326530612,
-      "length": 86,
+      "step_start": 6046,
+      "step_end": 6089,
+      "reward": 0.8420408163265306,
+      "length": 43,
       "success": true,
       "metrics": {
-        "steps": 86
+        "steps": 43
       }
     },
     {
       "episode": 46,
-      "step_start": 6789,
-      "step_end": 6803,
+      "step_start": 6089,
+      "step_end": 6103,
       "reward": 0.9485714285714286,
       "length": 14,
       "success": true,
@@ -524,107 +524,19 @@
     },
     {
       "episode": 47,
-      "step_start": 6803,
-      "step_end": 6829,
+      "step_start": 6103,
+      "step_end": 6117,
       "reward": 0.0,
-      "length": 26,
+      "length": 14,
       "success": false,
       "metrics": {
-        "steps": 26
+        "steps": 14
       }
     },
     {
       "episode": 48,
-      "step_start": 6829,
-      "step_end": 6890,
-      "reward": 0.0,
-      "length": 61,
-      "success": false,
-      "metrics": {
-        "steps": 61
-      }
-    },
-    {
-      "episode": 49,
-      "step_start": 6890,
-      "step_end": 6918,
-      "reward": 0.0,
-      "length": 28,
-      "success": false,
-      "metrics": {
-        "steps": 28
-      }
-    },
-    {
-      "episode": 50,
-      "step_start": 6918,
-      "step_end": 7028,
-      "reward": 0.5959183673469388,
-      "length": 110,
-      "success": true,
-      "metrics": {
-        "steps": 110
-      }
-    },
-    {
-      "episode": 51,
-      "step_start": 7028,
-      "step_end": 7079,
-      "reward": 0.8126530612244898,
-      "length": 51,
-      "success": true,
-      "metrics": {
-        "steps": 51
-      }
-    },
-    {
-      "episode": 52,
-      "step_start": 7079,
-      "step_end": 7140,
-      "reward": 0.0,
-      "length": 61,
-      "success": false,
-      "metrics": {
-        "steps": 61
-      }
-    },
-    {
-      "episode": 53,
-      "step_start": 7140,
-      "step_end": 7147,
-      "reward": 0.0,
-      "length": 7,
-      "success": false,
-      "metrics": {
-        "steps": 7
-      }
-    },
-    {
-      "episode": 54,
-      "step_start": 7147,
-      "step_end": 7241,
-      "reward": 0.6546938775510205,
-      "length": 94,
-      "success": true,
-      "metrics": {
-        "steps": 94
-      }
-    },
-    {
-      "episode": 55,
-      "step_start": 7241,
-      "step_end": 7297,
-      "reward": 0.0,
-      "length": 56,
-      "success": false,
-      "metrics": {
-        "steps": 56
-      }
-    },
-    {
-      "episode": 56,
-      "step_start": 7297,
-      "step_end": 7542,
+      "step_start": 6117,
+      "step_end": 6362,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -633,53 +545,141 @@
       }
     },
     {
-      "episode": 57,
-      "step_start": 7542,
-      "step_end": 7569,
-      "reward": 0.9008163265306123,
-      "length": 27,
+      "episode": 49,
+      "step_start": 6362,
+      "step_end": 6528,
+      "reward": 0.3902040816326531,
+      "length": 166,
       "success": true,
       "metrics": {
-        "steps": 27
+        "steps": 166
+      }
+    },
+    {
+      "episode": 50,
+      "step_start": 6528,
+      "step_end": 6544,
+      "reward": 0.9412244897959183,
+      "length": 16,
+      "success": true,
+      "metrics": {
+        "steps": 16
+      }
+    },
+    {
+      "episode": 51,
+      "step_start": 6544,
+      "step_end": 6556,
+      "reward": 0.9559183673469388,
+      "length": 12,
+      "success": true,
+      "metrics": {
+        "steps": 12
+      }
+    },
+    {
+      "episode": 52,
+      "step_start": 6556,
+      "step_end": 6642,
+      "reward": 0.6840816326530612,
+      "length": 86,
+      "success": true,
+      "metrics": {
+        "steps": 86
+      }
+    },
+    {
+      "episode": 53,
+      "step_start": 6642,
+      "step_end": 6679,
+      "reward": 0.0,
+      "length": 37,
+      "success": false,
+      "metrics": {
+        "steps": 37
+      }
+    },
+    {
+      "episode": 54,
+      "step_start": 6679,
+      "step_end": 6732,
+      "reward": 0.0,
+      "length": 53,
+      "success": false,
+      "metrics": {
+        "steps": 53
+      }
+    },
+    {
+      "episode": 55,
+      "step_start": 6732,
+      "step_end": 6742,
+      "reward": 0.963265306122449,
+      "length": 10,
+      "success": true,
+      "metrics": {
+        "steps": 10
+      }
+    },
+    {
+      "episode": 56,
+      "step_start": 6742,
+      "step_end": 6762,
+      "reward": 0.0,
+      "length": 20,
+      "success": false,
+      "metrics": {
+        "steps": 20
+      }
+    },
+    {
+      "episode": 57,
+      "step_start": 6762,
+      "step_end": 6777,
+      "reward": 0.9448979591836735,
+      "length": 15,
+      "success": true,
+      "metrics": {
+        "steps": 15
       }
     },
     {
       "episode": 58,
-      "step_start": 7569,
-      "step_end": 7726,
-      "reward": 0.42326530612244895,
-      "length": 157,
+      "step_start": 6777,
+      "step_end": 6791,
+      "reward": 0.9485714285714286,
+      "length": 14,
       "success": true,
       "metrics": {
-        "steps": 157
+        "steps": 14
       }
     },
     {
       "episode": 59,
-      "step_start": 7726,
-      "step_end": 7739,
-      "reward": 0.9522448979591837,
-      "length": 13,
-      "success": true,
+      "step_start": 6791,
+      "step_end": 6805,
+      "reward": 0.0,
+      "length": 14,
+      "success": false,
       "metrics": {
-        "steps": 13
+        "steps": 14
       }
     },
     {
       "episode": 60,
-      "step_start": 7739,
-      "step_end": 7896,
-      "reward": 0.0,
-      "length": 157,
-      "success": false,
+      "step_start": 6805,
+      "step_end": 6821,
+      "reward": 0.9412244897959183,
+      "length": 16,
+      "success": true,
       "metrics": {
-        "steps": 157
+        "steps": 16
       }
     },
     {
       "episode": 61,
-      "step_start": 7896,
-      "step_end": 7902,
+      "step_start": 6821,
+      "step_end": 6827,
       "reward": 0.0,
       "length": 6,
       "success": false,
@@ -689,1009 +689,8 @@
     },
     {
       "episode": 62,
-      "step_start": 7902,
-      "step_end": 7930,
-      "reward": 0.8971428571428571,
-      "length": 28,
-      "success": true,
-      "metrics": {
-        "steps": 28
-      }
-    },
-    {
-      "episode": 63,
-      "step_start": 7930,
-      "step_end": 7962,
-      "reward": 0.8824489795918368,
-      "length": 32,
-      "success": true,
-      "metrics": {
-        "steps": 32
-      }
-    },
-    {
-      "episode": 64,
-      "step_start": 7962,
-      "step_end": 7993,
-      "reward": 0.8861224489795918,
-      "length": 31,
-      "success": true,
-      "metrics": {
-        "steps": 31
-      }
-    },
-    {
-      "episode": 65,
-      "step_start": 7993,
-      "step_end": 8018,
-      "reward": 0.9081632653061225,
-      "length": 25,
-      "success": true,
-      "metrics": {
-        "steps": 25
-      }
-    },
-    {
-      "episode": 66,
-      "step_start": 8018,
-      "step_end": 8048,
-      "reward": 0.0,
-      "length": 30,
-      "success": false,
-      "metrics": {
-        "steps": 30
-      }
-    },
-    {
-      "episode": 67,
-      "step_start": 8048,
-      "step_end": 8066,
-      "reward": 0.0,
-      "length": 18,
-      "success": false,
-      "metrics": {
-        "steps": 18
-      }
-    },
-    {
-      "episode": 68,
-      "step_start": 8066,
-      "step_end": 8144,
-      "reward": 0.0,
-      "length": 78,
-      "success": false,
-      "metrics": {
-        "steps": 78
-      }
-    },
-    {
-      "episode": 69,
-      "step_start": 8144,
-      "step_end": 8190,
-      "reward": 0.8310204081632653,
-      "length": 46,
-      "success": true,
-      "metrics": {
-        "steps": 46
-      }
-    },
-    {
-      "episode": 70,
-      "step_start": 8190,
-      "step_end": 8195,
-      "reward": 0.0,
-      "length": 5,
-      "success": false,
-      "metrics": {
-        "steps": 5
-      }
-    },
-    {
-      "episode": 71,
-      "step_start": 8195,
-      "step_end": 8198,
-      "reward": 0.0,
-      "length": 3,
-      "success": false,
-      "metrics": {
-        "steps": 3
-      }
-    },
-    {
-      "episode": 72,
-      "step_start": 8198,
-      "step_end": 8254,
-      "reward": 0.7942857142857143,
-      "length": 56,
-      "success": true,
-      "metrics": {
-        "steps": 56
-      }
-    },
-    {
-      "episode": 73,
-      "step_start": 8254,
-      "step_end": 8274,
-      "reward": 0.0,
-      "length": 20,
-      "success": false,
-      "metrics": {
-        "steps": 20
-      }
-    },
-    {
-      "episode": 74,
-      "step_start": 8274,
-      "step_end": 8287,
-      "reward": 0.0,
-      "length": 13,
-      "success": false,
-      "metrics": {
-        "steps": 13
-      }
-    },
-    {
-      "episode": 75,
-      "step_start": 8287,
-      "step_end": 8386,
-      "reward": 0.6363265306122449,
-      "length": 99,
-      "success": true,
-      "metrics": {
-        "steps": 99
-      }
-    },
-    {
-      "episode": 76,
-      "step_start": 8386,
-      "step_end": 8413,
-      "reward": 0.0,
-      "length": 27,
-      "success": false,
-      "metrics": {
-        "steps": 27
-      }
-    },
-    {
-      "episode": 77,
-      "step_start": 8413,
-      "step_end": 8436,
-      "reward": 0.0,
-      "length": 23,
-      "success": false,
-      "metrics": {
-        "steps": 23
-      }
-    },
-    {
-      "episode": 78,
-      "step_start": 8436,
-      "step_end": 8513,
-      "reward": 0.0,
-      "length": 77,
-      "success": false,
-      "metrics": {
-        "steps": 77
-      }
-    },
-    {
-      "episode": 79,
-      "step_start": 8513,
-      "step_end": 8530,
-      "reward": 0.0,
-      "length": 17,
-      "success": false,
-      "metrics": {
-        "steps": 17
-      }
-    },
-    {
-      "episode": 80,
-      "step_start": 8530,
-      "step_end": 8571,
-      "reward": 0.8493877551020408,
-      "length": 41,
-      "success": true,
-      "metrics": {
-        "steps": 41
-      }
-    },
-    {
-      "episode": 81,
-      "step_start": 8571,
-      "step_end": 8596,
-      "reward": 0.9081632653061225,
-      "length": 25,
-      "success": true,
-      "metrics": {
-        "steps": 25
-      }
-    },
-    {
-      "episode": 82,
-      "step_start": 8596,
-      "step_end": 8647,
-      "reward": 0.0,
-      "length": 51,
-      "success": false,
-      "metrics": {
-        "steps": 51
-      }
-    },
-    {
-      "episode": 83,
-      "step_start": 8647,
-      "step_end": 8676,
-      "reward": 0.0,
-      "length": 29,
-      "success": false,
-      "metrics": {
-        "steps": 29
-      }
-    },
-    {
-      "episode": 84,
-      "step_start": 8676,
-      "step_end": 8693,
-      "reward": 0.9375510204081633,
-      "length": 17,
-      "success": true,
-      "metrics": {
-        "steps": 17
-      }
-    },
-    {
-      "episode": 85,
-      "step_start": 8693,
-      "step_end": 8713,
-      "reward": 0.926530612244898,
-      "length": 20,
-      "success": true,
-      "metrics": {
-        "steps": 20
-      }
-    },
-    {
-      "episode": 86,
-      "step_start": 8713,
-      "step_end": 8727,
-      "reward": 0.0,
-      "length": 14,
-      "success": false,
-      "metrics": {
-        "steps": 14
-      }
-    },
-    {
-      "episode": 87,
-      "step_start": 8727,
-      "step_end": 8778,
-      "reward": 0.0,
-      "length": 51,
-      "success": false,
-      "metrics": {
-        "steps": 51
-      }
-    },
-    {
-      "episode": 88,
-      "step_start": 8778,
-      "step_end": 8787,
-      "reward": 0.9669387755102041,
-      "length": 9,
-      "success": true,
-      "metrics": {
-        "steps": 9
-      }
-    },
-    {
-      "episode": 89,
-      "step_start": 8787,
-      "step_end": 8927,
-      "reward": 0.48571428571428577,
-      "length": 140,
-      "success": true,
-      "metrics": {
-        "steps": 140
-      }
-    },
-    {
-      "episode": 90,
-      "step_start": 8927,
-      "step_end": 9172,
-      "reward": 0.0,
-      "length": 245,
-      "success": false,
-      "metrics": {
-        "steps": 245
-      }
-    },
-    {
-      "episode": 91,
-      "step_start": 9172,
-      "step_end": 9192,
-      "reward": 0.0,
-      "length": 20,
-      "success": false,
-      "metrics": {
-        "steps": 20
-      }
-    },
-    {
-      "episode": 92,
-      "step_start": 9192,
-      "step_end": 9220,
-      "reward": 0.8971428571428571,
-      "length": 28,
-      "success": true,
-      "metrics": {
-        "steps": 28
-      }
-    },
-    {
-      "episode": 93,
-      "step_start": 9220,
-      "step_end": 9322,
-      "reward": 0.0,
-      "length": 102,
-      "success": false,
-      "metrics": {
-        "steps": 102
-      }
-    },
-    {
-      "episode": 94,
-      "step_start": 9322,
-      "step_end": 9461,
-      "reward": 0.0,
-      "length": 139,
-      "success": false,
-      "metrics": {
-        "steps": 139
-      }
-    },
-    {
-      "episode": 95,
-      "step_start": 9461,
-      "step_end": 9644,
-      "reward": 0.32775510204081637,
-      "length": 183,
-      "success": true,
-      "metrics": {
-        "steps": 183
-      }
-    },
-    {
-      "episode": 96,
-      "step_start": 9644,
-      "step_end": 9886,
-      "reward": 0.0,
-      "length": 242,
-      "success": false,
-      "metrics": {
-        "steps": 242
-      }
-    },
-    {
-      "episode": 97,
-      "step_start": 9886,
-      "step_end": 10131,
-      "reward": 0.0,
-      "length": 245,
-      "success": false,
-      "metrics": {
-        "steps": 245
-      }
-    },
-    {
-      "episode": 98,
-      "step_start": 10131,
-      "step_end": 10216,
-      "reward": 0.6877551020408164,
-      "length": 85,
-      "success": true,
-      "metrics": {
-        "steps": 85
-      }
-    },
-    {
-      "episode": 99,
-      "step_start": 10216,
-      "step_end": 10461,
-      "reward": 0.0,
-      "length": 245,
-      "success": false,
-      "metrics": {
-        "steps": 245
-      }
-    },
-    {
-      "episode": 100,
-      "step_start": 10461,
-      "step_end": 10518,
-      "reward": 0.0,
-      "length": 57,
-      "success": false,
-      "metrics": {
-        "steps": 57
-      }
-    },
-    {
-      "episode": 101,
-      "step_start": 10518,
-      "step_end": 10552,
-      "reward": 0.0,
-      "length": 34,
-      "success": false,
-      "metrics": {
-        "steps": 34
-      }
-    },
-    {
-      "episode": 102,
-      "step_start": 10552,
-      "step_end": 10797,
-      "reward": 0.0,
-      "length": 245,
-      "success": false,
-      "metrics": {
-        "steps": 245
-      }
-    },
-    {
-      "episode": 103,
-      "step_start": 10797,
-      "step_end": 11019,
-      "reward": 0.18448979591836734,
-      "length": 222,
-      "success": true,
-      "metrics": {
-        "steps": 222
-      }
-    },
-    {
-      "episode": 104,
-      "step_start": 11019,
-      "step_end": 11172,
-      "reward": 0.0,
-      "length": 153,
-      "success": false,
-      "metrics": {
-        "steps": 153
-      }
-    },
-    {
-      "episode": 105,
-      "step_start": 11172,
-      "step_end": 11183,
-      "reward": 0.0,
-      "length": 11,
-      "success": false,
-      "metrics": {
-        "steps": 11
-      }
-    },
-    {
-      "episode": 106,
-      "step_start": 11183,
-      "step_end": 11428,
-      "reward": 0.0,
-      "length": 245,
-      "success": false,
-      "metrics": {
-        "steps": 245
-      }
-    },
-    {
-      "episode": 107,
-      "step_start": 11428,
-      "step_end": 11564,
-      "reward": 0.5004081632653061,
-      "length": 136,
-      "success": true,
-      "metrics": {
-        "steps": 136
-      }
-    },
-    {
-      "episode": 108,
-      "step_start": 11564,
-      "step_end": 11606,
-      "reward": 0.0,
-      "length": 42,
-      "success": false,
-      "metrics": {
-        "steps": 42
-      }
-    },
-    {
-      "episode": 109,
-      "step_start": 11606,
-      "step_end": 11643,
-      "reward": 0.8640816326530611,
-      "length": 37,
-      "success": true,
-      "metrics": {
-        "steps": 37
-      }
-    },
-    {
-      "episode": 110,
-      "step_start": 11643,
-      "step_end": 11669,
-      "reward": 0.0,
-      "length": 26,
-      "success": false,
-      "metrics": {
-        "steps": 26
-      }
-    },
-    {
-      "episode": 111,
-      "step_start": 11669,
-      "step_end": 11690,
-      "reward": 0.0,
-      "length": 21,
-      "success": false,
-      "metrics": {
-        "steps": 21
-      }
-    },
-    {
-      "episode": 112,
-      "step_start": 11690,
-      "step_end": 11710,
-      "reward": 0.926530612244898,
-      "length": 20,
-      "success": true,
-      "metrics": {
-        "steps": 20
-      }
-    },
-    {
-      "episode": 113,
-      "step_start": 11710,
-      "step_end": 11955,
-      "reward": 0.0,
-      "length": 245,
-      "success": false,
-      "metrics": {
-        "steps": 245
-      }
-    },
-    {
-      "episode": 114,
-      "step_start": 11955,
-      "step_end": 12015,
-      "reward": 0.7795918367346939,
-      "length": 60,
-      "success": true,
-      "metrics": {
-        "steps": 60
-      }
-    },
-    {
-      "episode": 115,
-      "step_start": 12015,
-      "step_end": 12176,
-      "reward": 0.4085714285714286,
-      "length": 161,
-      "success": true,
-      "metrics": {
-        "steps": 161
-      }
-    },
-    {
-      "episode": 116,
-      "step_start": 12176,
-      "step_end": 12195,
-      "reward": 0.0,
-      "length": 19,
-      "success": false,
-      "metrics": {
-        "steps": 19
-      }
-    },
-    {
-      "episode": 117,
-      "step_start": 12195,
-      "step_end": 12254,
-      "reward": 0.7832653061224489,
-      "length": 59,
-      "success": true,
-      "metrics": {
-        "steps": 59
-      }
-    },
-    {
-      "episode": 118,
-      "step_start": 12254,
-      "step_end": 12451,
-      "reward": 0.2763265306122449,
-      "length": 197,
-      "success": true,
-      "metrics": {
-        "steps": 197
-      }
-    },
-    {
-      "episode": 119,
-      "step_start": 12451,
-      "step_end": 12479,
-      "reward": 0.0,
-      "length": 28,
-      "success": false,
-      "metrics": {
-        "steps": 28
-      }
-    },
-    {
-      "episode": 120,
-      "step_start": 12479,
-      "step_end": 12724,
-      "reward": 0.0,
-      "length": 245,
-      "success": false,
-      "metrics": {
-        "steps": 245
-      }
-    },
-    {
-      "episode": 121,
-      "step_start": 12724,
-      "step_end": 12928,
-      "reward": 0.0,
-      "length": 204,
-      "success": false,
-      "metrics": {
-        "steps": 204
-      }
-    },
-    {
-      "episode": 122,
-      "step_start": 12928,
-      "step_end": 13073,
-      "reward": 0.46734693877551015,
-      "length": 145,
-      "success": true,
-      "metrics": {
-        "steps": 145
-      }
-    },
-    {
-      "episode": 123,
-      "step_start": 13073,
-      "step_end": 13184,
-      "reward": 0.0,
-      "length": 111,
-      "success": false,
-      "metrics": {
-        "steps": 111
-      }
-    },
-    {
-      "episode": 124,
-      "step_start": 13184,
-      "step_end": 13307,
-      "reward": 0.0,
-      "length": 123,
-      "success": false,
-      "metrics": {
-        "steps": 123
-      }
-    },
-    {
-      "episode": 125,
-      "step_start": 13307,
-      "step_end": 13422,
-      "reward": 0.5775510204081633,
-      "length": 115,
-      "success": true,
-      "metrics": {
-        "steps": 115
-      }
-    },
-    {
-      "episode": 126,
-      "step_start": 13422,
-      "step_end": 13430,
-      "reward": 0.9706122448979592,
-      "length": 8,
-      "success": true,
-      "metrics": {
-        "steps": 8
-      }
-    },
-    {
-      "episode": 127,
-      "step_start": 13430,
-      "step_end": 13675,
-      "reward": 0.0,
-      "length": 245,
-      "success": false,
-      "metrics": {
-        "steps": 245
-      }
-    },
-    {
-      "episode": 128,
-      "step_start": 13675,
-      "step_end": 13793,
-      "reward": 0.0,
-      "length": 118,
-      "success": false,
-      "metrics": {
-        "steps": 118
-      }
-    },
-    {
-      "episode": 129,
-      "step_start": 13793,
-      "step_end": 14038,
-      "reward": 0.0,
-      "length": 245,
-      "success": false,
-      "metrics": {
-        "steps": 245
-      }
-    },
-    {
-      "episode": 130,
-      "step_start": 14038,
-      "step_end": 14283,
-      "reward": 0.0,
-      "length": 245,
-      "success": false,
-      "metrics": {
-        "steps": 245
-      }
-    },
-    {
-      "episode": 131,
-      "step_start": 14283,
-      "step_end": 14289,
-      "reward": 0.0,
-      "length": 6,
-      "success": false,
-      "metrics": {
-        "steps": 6
-      }
-    },
-    {
-      "episode": 132,
-      "step_start": 14289,
-      "step_end": 14403,
-      "reward": 0.0,
-      "length": 114,
-      "success": false,
-      "metrics": {
-        "steps": 114
-      }
-    },
-    {
-      "episode": 133,
-      "step_start": 14403,
-      "step_end": 14451,
-      "reward": 0.8236734693877551,
-      "length": 48,
-      "success": true,
-      "metrics": {
-        "steps": 48
-      }
-    },
-    {
-      "episode": 134,
-      "step_start": 14451,
-      "step_end": 14613,
-      "reward": 0.0,
-      "length": 162,
-      "success": false,
-      "metrics": {
-        "steps": 162
-      }
-    },
-    {
-      "episode": 135,
-      "step_start": 14613,
-      "step_end": 14633,
-      "reward": 0.0,
-      "length": 20,
-      "success": false,
-      "metrics": {
-        "steps": 20
-      }
-    },
-    {
-      "episode": 136,
-      "step_start": 14633,
-      "step_end": 14658,
-      "reward": 0.0,
-      "length": 25,
-      "success": false,
-      "metrics": {
-        "steps": 25
-      }
-    },
-    {
-      "episode": 137,
-      "step_start": 14658,
-      "step_end": 14800,
-      "reward": 0.4783673469387756,
-      "length": 142,
-      "success": true,
-      "metrics": {
-        "steps": 142
-      }
-    },
-    {
-      "episode": 138,
-      "step_start": 14800,
-      "step_end": 14842,
-      "reward": 0.0,
-      "length": 42,
-      "success": false,
-      "metrics": {
-        "steps": 42
-      }
-    },
-    {
-      "episode": 139,
-      "step_start": 14842,
-      "step_end": 14942,
-      "reward": 0.6326530612244898,
-      "length": 100,
-      "success": true,
-      "metrics": {
-        "steps": 100
-      }
-    },
-    {
-      "episode": 140,
-      "step_start": 14942,
-      "step_end": 15017,
-      "reward": 0.0,
-      "length": 75,
-      "success": false,
-      "metrics": {
-        "steps": 75
-      }
-    },
-    {
-      "episode": 141,
-      "step_start": 15017,
-      "step_end": 15162,
-      "reward": 0.0,
-      "length": 145,
-      "success": false,
-      "metrics": {
-        "steps": 145
-      }
-    },
-    {
-      "episode": 142,
-      "step_start": 15162,
-      "step_end": 15173,
-      "reward": 0.0,
-      "length": 11,
-      "success": false,
-      "metrics": {
-        "steps": 11
-      }
-    },
-    {
-      "episode": 143,
-      "step_start": 15173,
-      "step_end": 15243,
-      "reward": 0.0,
-      "length": 70,
-      "success": false,
-      "metrics": {
-        "steps": 70
-      }
-    },
-    {
-      "episode": 144,
-      "step_start": 15243,
-      "step_end": 15393,
-      "reward": 0.44897959183673464,
-      "length": 150,
-      "success": true,
-      "metrics": {
-        "steps": 150
-      }
-    },
-    {
-      "episode": 145,
-      "step_start": 15393,
-      "step_end": 15490,
-      "reward": 0.0,
-      "length": 97,
-      "success": false,
-      "metrics": {
-        "steps": 97
-      }
-    },
-    {
-      "episode": 146,
-      "step_start": 15490,
-      "step_end": 15571,
-      "reward": 0.0,
-      "length": 81,
-      "success": false,
-      "metrics": {
-        "steps": 81
-      }
-    },
-    {
-      "episode": 147,
-      "step_start": 15571,
-      "step_end": 15616,
-      "reward": 0.0,
-      "length": 45,
-      "success": false,
-      "metrics": {
-        "steps": 45
-      }
-    },
-    {
-      "episode": 148,
-      "step_start": 15616,
-      "step_end": 15647,
-      "reward": 0.0,
-      "length": 31,
-      "success": false,
-      "metrics": {
-        "steps": 31
-      }
-    },
-    {
-      "episode": 149,
-      "step_start": 15647,
-      "step_end": 15742,
-      "reward": 0.6510204081632653,
-      "length": 95,
-      "success": true,
-      "metrics": {
-        "steps": 95
-      }
-    },
-    {
-      "episode": 150,
-      "step_start": 15742,
-      "step_end": 15767,
-      "reward": 0.9081632653061225,
-      "length": 25,
-      "success": true,
-      "metrics": {
-        "steps": 25
-      }
-    },
-    {
-      "episode": 151,
-      "step_start": 15767,
-      "step_end": 16012,
-      "reward": 0.0,
-      "length": 245,
-      "success": false,
-      "metrics": {
-        "steps": 245
-      }
-    },
-    {
-      "episode": 152,
-      "step_start": 16012,
-      "step_end": 16257,
-      "reward": 0.0,
-      "length": 245,
-      "success": false,
-      "metrics": {
-        "steps": 245
-      }
-    },
-    {
-      "episode": 153,
-      "step_start": 16257,
-      "step_end": 16373,
+      "step_start": 6827,
+      "step_end": 6943,
       "reward": 0.5738775510204082,
       "length": 116,
       "success": true,
@@ -1700,53 +699,119 @@
       }
     },
     {
-      "episode": 154,
-      "step_start": 16373,
-      "step_end": 16618,
+      "episode": 63,
+      "step_start": 6943,
+      "step_end": 7061,
       "reward": 0.0,
-      "length": 245,
+      "length": 118,
       "success": false,
       "metrics": {
-        "steps": 245
+        "steps": 118
       }
     },
     {
-      "episode": 155,
-      "step_start": 16618,
-      "step_end": 16720,
-      "reward": 0.6253061224489795,
-      "length": 102,
+      "episode": 64,
+      "step_start": 7061,
+      "step_end": 7178,
+      "reward": 0.570204081632653,
+      "length": 117,
       "success": true,
       "metrics": {
-        "steps": 102
+        "steps": 117
       }
     },
     {
-      "episode": 156,
-      "step_start": 16720,
-      "step_end": 16850,
+      "episode": 65,
+      "step_start": 7178,
+      "step_end": 7195,
+      "reward": 0.9375510204081633,
+      "length": 17,
+      "success": true,
+      "metrics": {
+        "steps": 17
+      }
+    },
+    {
+      "episode": 66,
+      "step_start": 7195,
+      "step_end": 7222,
       "reward": 0.0,
-      "length": 130,
+      "length": 27,
       "success": false,
       "metrics": {
-        "steps": 130
+        "steps": 27
       }
     },
     {
-      "episode": 157,
-      "step_start": 16850,
-      "step_end": 16938,
+      "episode": 67,
+      "step_start": 7222,
+      "step_end": 7276,
+      "reward": 0.8016326530612244,
+      "length": 54,
+      "success": true,
+      "metrics": {
+        "steps": 54
+      }
+    },
+    {
+      "episode": 68,
+      "step_start": 7276,
+      "step_end": 7301,
       "reward": 0.0,
-      "length": 88,
+      "length": 25,
       "success": false,
       "metrics": {
-        "steps": 88
+        "steps": 25
       }
     },
     {
-      "episode": 158,
-      "step_start": 16938,
-      "step_end": 16956,
+      "episode": 69,
+      "step_start": 7301,
+      "step_end": 7346,
+      "reward": 0.0,
+      "length": 45,
+      "success": false,
+      "metrics": {
+        "steps": 45
+      }
+    },
+    {
+      "episode": 70,
+      "step_start": 7346,
+      "step_end": 7359,
+      "reward": 0.0,
+      "length": 13,
+      "success": false,
+      "metrics": {
+        "steps": 13
+      }
+    },
+    {
+      "episode": 71,
+      "step_start": 7359,
+      "step_end": 7382,
+      "reward": 0.9155102040816326,
+      "length": 23,
+      "success": true,
+      "metrics": {
+        "steps": 23
+      }
+    },
+    {
+      "episode": 72,
+      "step_start": 7382,
+      "step_end": 7415,
+      "reward": 0.0,
+      "length": 33,
+      "success": false,
+      "metrics": {
+        "steps": 33
+      }
+    },
+    {
+      "episode": 73,
+      "step_start": 7415,
+      "step_end": 7433,
       "reward": 0.9338775510204081,
       "length": 18,
       "success": true,
@@ -1755,9 +820,493 @@
       }
     },
     {
-      "episode": 159,
-      "step_start": 16956,
-      "step_end": 16984,
+      "episode": 74,
+      "step_start": 7433,
+      "step_end": 7453,
+      "reward": 0.0,
+      "length": 20,
+      "success": false,
+      "metrics": {
+        "steps": 20
+      }
+    },
+    {
+      "episode": 75,
+      "step_start": 7453,
+      "step_end": 7474,
+      "reward": 0.9228571428571428,
+      "length": 21,
+      "success": true,
+      "metrics": {
+        "steps": 21
+      }
+    },
+    {
+      "episode": 76,
+      "step_start": 7474,
+      "step_end": 7507,
+      "reward": 0.8787755102040816,
+      "length": 33,
+      "success": true,
+      "metrics": {
+        "steps": 33
+      }
+    },
+    {
+      "episode": 77,
+      "step_start": 7507,
+      "step_end": 7551,
+      "reward": 0.8383673469387756,
+      "length": 44,
+      "success": true,
+      "metrics": {
+        "steps": 44
+      }
+    },
+    {
+      "episode": 78,
+      "step_start": 7551,
+      "step_end": 7593,
+      "reward": 0.8457142857142856,
+      "length": 42,
+      "success": true,
+      "metrics": {
+        "steps": 42
+      }
+    },
+    {
+      "episode": 79,
+      "step_start": 7593,
+      "step_end": 7608,
+      "reward": 0.9448979591836735,
+      "length": 15,
+      "success": true,
+      "metrics": {
+        "steps": 15
+      }
+    },
+    {
+      "episode": 80,
+      "step_start": 7608,
+      "step_end": 7645,
+      "reward": 0.8640816326530611,
+      "length": 37,
+      "success": true,
+      "metrics": {
+        "steps": 37
+      }
+    },
+    {
+      "episode": 81,
+      "step_start": 7645,
+      "step_end": 7685,
+      "reward": 0.8530612244897959,
+      "length": 40,
+      "success": true,
+      "metrics": {
+        "steps": 40
+      }
+    },
+    {
+      "episode": 82,
+      "step_start": 7685,
+      "step_end": 7696,
+      "reward": 0.0,
+      "length": 11,
+      "success": false,
+      "metrics": {
+        "steps": 11
+      }
+    },
+    {
+      "episode": 83,
+      "step_start": 7696,
+      "step_end": 7729,
+      "reward": 0.0,
+      "length": 33,
+      "success": false,
+      "metrics": {
+        "steps": 33
+      }
+    },
+    {
+      "episode": 84,
+      "step_start": 7729,
+      "step_end": 7974,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
+      "metrics": {
+        "steps": 245
+      }
+    },
+    {
+      "episode": 85,
+      "step_start": 7974,
+      "step_end": 7990,
+      "reward": 0.9412244897959183,
+      "length": 16,
+      "success": true,
+      "metrics": {
+        "steps": 16
+      }
+    },
+    {
+      "episode": 86,
+      "step_start": 7990,
+      "step_end": 8016,
+      "reward": 0.0,
+      "length": 26,
+      "success": false,
+      "metrics": {
+        "steps": 26
+      }
+    },
+    {
+      "episode": 87,
+      "step_start": 8016,
+      "step_end": 8034,
+      "reward": 0.0,
+      "length": 18,
+      "success": false,
+      "metrics": {
+        "steps": 18
+      }
+    },
+    {
+      "episode": 88,
+      "step_start": 8034,
+      "step_end": 8054,
+      "reward": 0.0,
+      "length": 20,
+      "success": false,
+      "metrics": {
+        "steps": 20
+      }
+    },
+    {
+      "episode": 89,
+      "step_start": 8054,
+      "step_end": 8108,
+      "reward": 0.8016326530612244,
+      "length": 54,
+      "success": true,
+      "metrics": {
+        "steps": 54
+      }
+    },
+    {
+      "episode": 90,
+      "step_start": 8108,
+      "step_end": 8171,
+      "reward": 0.7685714285714286,
+      "length": 63,
+      "success": true,
+      "metrics": {
+        "steps": 63
+      }
+    },
+    {
+      "episode": 91,
+      "step_start": 8171,
+      "step_end": 8185,
+      "reward": 0.9485714285714286,
+      "length": 14,
+      "success": true,
+      "metrics": {
+        "steps": 14
+      }
+    },
+    {
+      "episode": 92,
+      "step_start": 8185,
+      "step_end": 8214,
+      "reward": 0.0,
+      "length": 29,
+      "success": false,
+      "metrics": {
+        "steps": 29
+      }
+    },
+    {
+      "episode": 93,
+      "step_start": 8214,
+      "step_end": 8266,
+      "reward": 0.8089795918367347,
+      "length": 52,
+      "success": true,
+      "metrics": {
+        "steps": 52
+      }
+    },
+    {
+      "episode": 94,
+      "step_start": 8266,
+      "step_end": 8324,
+      "reward": 0.7869387755102041,
+      "length": 58,
+      "success": true,
+      "metrics": {
+        "steps": 58
+      }
+    },
+    {
+      "episode": 95,
+      "step_start": 8324,
+      "step_end": 8376,
+      "reward": 0.0,
+      "length": 52,
+      "success": false,
+      "metrics": {
+        "steps": 52
+      }
+    },
+    {
+      "episode": 96,
+      "step_start": 8376,
+      "step_end": 8425,
+      "reward": 0.0,
+      "length": 49,
+      "success": false,
+      "metrics": {
+        "steps": 49
+      }
+    },
+    {
+      "episode": 97,
+      "step_start": 8425,
+      "step_end": 8439,
+      "reward": 0.0,
+      "length": 14,
+      "success": false,
+      "metrics": {
+        "steps": 14
+      }
+    },
+    {
+      "episode": 98,
+      "step_start": 8439,
+      "step_end": 8464,
+      "reward": 0.9081632653061225,
+      "length": 25,
+      "success": true,
+      "metrics": {
+        "steps": 25
+      }
+    },
+    {
+      "episode": 99,
+      "step_start": 8464,
+      "step_end": 8497,
+      "reward": 0.8787755102040816,
+      "length": 33,
+      "success": true,
+      "metrics": {
+        "steps": 33
+      }
+    },
+    {
+      "episode": 100,
+      "step_start": 8497,
+      "step_end": 8561,
+      "reward": 0.0,
+      "length": 64,
+      "success": false,
+      "metrics": {
+        "steps": 64
+      }
+    },
+    {
+      "episode": 101,
+      "step_start": 8561,
+      "step_end": 8571,
+      "reward": 0.0,
+      "length": 10,
+      "success": false,
+      "metrics": {
+        "steps": 10
+      }
+    },
+    {
+      "episode": 102,
+      "step_start": 8571,
+      "step_end": 8590,
+      "reward": 0.9302040816326531,
+      "length": 19,
+      "success": true,
+      "metrics": {
+        "steps": 19
+      }
+    },
+    {
+      "episode": 103,
+      "step_start": 8590,
+      "step_end": 8702,
+      "reward": 0.0,
+      "length": 112,
+      "success": false,
+      "metrics": {
+        "steps": 112
+      }
+    },
+    {
+      "episode": 104,
+      "step_start": 8702,
+      "step_end": 8713,
+      "reward": 0.9595918367346938,
+      "length": 11,
+      "success": true,
+      "metrics": {
+        "steps": 11
+      }
+    },
+    {
+      "episode": 105,
+      "step_start": 8713,
+      "step_end": 8728,
+      "reward": 0.0,
+      "length": 15,
+      "success": false,
+      "metrics": {
+        "steps": 15
+      }
+    },
+    {
+      "episode": 106,
+      "step_start": 8728,
+      "step_end": 8741,
+      "reward": 0.9522448979591837,
+      "length": 13,
+      "success": true,
+      "metrics": {
+        "steps": 13
+      }
+    },
+    {
+      "episode": 107,
+      "step_start": 8741,
+      "step_end": 8765,
+      "reward": 0.9118367346938776,
+      "length": 24,
+      "success": true,
+      "metrics": {
+        "steps": 24
+      }
+    },
+    {
+      "episode": 108,
+      "step_start": 8765,
+      "step_end": 8793,
+      "reward": 0.8971428571428571,
+      "length": 28,
+      "success": true,
+      "metrics": {
+        "steps": 28
+      }
+    },
+    {
+      "episode": 109,
+      "step_start": 8793,
+      "step_end": 8852,
+      "reward": 0.7832653061224489,
+      "length": 59,
+      "success": true,
+      "metrics": {
+        "steps": 59
+      }
+    },
+    {
+      "episode": 110,
+      "step_start": 8852,
+      "step_end": 8886,
+      "reward": 0.8751020408163266,
+      "length": 34,
+      "success": true,
+      "metrics": {
+        "steps": 34
+      }
+    },
+    {
+      "episode": 111,
+      "step_start": 8886,
+      "step_end": 8918,
+      "reward": 0.0,
+      "length": 32,
+      "success": false,
+      "metrics": {
+        "steps": 32
+      }
+    },
+    {
+      "episode": 112,
+      "step_start": 8918,
+      "step_end": 8922,
+      "reward": 0.0,
+      "length": 4,
+      "success": false,
+      "metrics": {
+        "steps": 4
+      }
+    },
+    {
+      "episode": 113,
+      "step_start": 8922,
+      "step_end": 8967,
+      "reward": 0.8346938775510204,
+      "length": 45,
+      "success": true,
+      "metrics": {
+        "steps": 45
+      }
+    },
+    {
+      "episode": 114,
+      "step_start": 8967,
+      "step_end": 8973,
+      "reward": 0.9779591836734693,
+      "length": 6,
+      "success": true,
+      "metrics": {
+        "steps": 6
+      }
+    },
+    {
+      "episode": 115,
+      "step_start": 8973,
+      "step_end": 9103,
+      "reward": 0.5224489795918367,
+      "length": 130,
+      "success": true,
+      "metrics": {
+        "steps": 130
+      }
+    },
+    {
+      "episode": 116,
+      "step_start": 9103,
+      "step_end": 9126,
+      "reward": 0.0,
+      "length": 23,
+      "success": false,
+      "metrics": {
+        "steps": 23
+      }
+    },
+    {
+      "episode": 117,
+      "step_start": 9126,
+      "step_end": 9159,
+      "reward": 0.8787755102040816,
+      "length": 33,
+      "success": true,
+      "metrics": {
+        "steps": 33
+      }
+    },
+    {
+      "episode": 118,
+      "step_start": 9159,
+      "step_end": 9187,
       "reward": 0.0,
       "length": 28,
       "success": false,
@@ -1766,9 +1315,460 @@
       }
     },
     {
+      "episode": 119,
+      "step_start": 9187,
+      "step_end": 9235,
+      "reward": 0.8236734693877551,
+      "length": 48,
+      "success": true,
+      "metrics": {
+        "steps": 48
+      }
+    },
+    {
+      "episode": 120,
+      "step_start": 9235,
+      "step_end": 9259,
+      "reward": 0.0,
+      "length": 24,
+      "success": false,
+      "metrics": {
+        "steps": 24
+      }
+    },
+    {
+      "episode": 121,
+      "step_start": 9259,
+      "step_end": 9290,
+      "reward": 0.8861224489795918,
+      "length": 31,
+      "success": true,
+      "metrics": {
+        "steps": 31
+      }
+    },
+    {
+      "episode": 122,
+      "step_start": 9290,
+      "step_end": 9478,
+      "reward": 0.30938775510204086,
+      "length": 188,
+      "success": true,
+      "metrics": {
+        "steps": 188
+      }
+    },
+    {
+      "episode": 123,
+      "step_start": 9478,
+      "step_end": 9493,
+      "reward": 0.0,
+      "length": 15,
+      "success": false,
+      "metrics": {
+        "steps": 15
+      }
+    },
+    {
+      "episode": 124,
+      "step_start": 9493,
+      "step_end": 9580,
+      "reward": 0.0,
+      "length": 87,
+      "success": false,
+      "metrics": {
+        "steps": 87
+      }
+    },
+    {
+      "episode": 125,
+      "step_start": 9580,
+      "step_end": 9647,
+      "reward": 0.0,
+      "length": 67,
+      "success": false,
+      "metrics": {
+        "steps": 67
+      }
+    },
+    {
+      "episode": 126,
+      "step_start": 9647,
+      "step_end": 9724,
+      "reward": 0.7171428571428571,
+      "length": 77,
+      "success": true,
+      "metrics": {
+        "steps": 77
+      }
+    },
+    {
+      "episode": 127,
+      "step_start": 9724,
+      "step_end": 9739,
+      "reward": 0.0,
+      "length": 15,
+      "success": false,
+      "metrics": {
+        "steps": 15
+      }
+    },
+    {
+      "episode": 128,
+      "step_start": 9739,
+      "step_end": 9765,
+      "reward": 0.9044897959183673,
+      "length": 26,
+      "success": true,
+      "metrics": {
+        "steps": 26
+      }
+    },
+    {
+      "episode": 129,
+      "step_start": 9765,
+      "step_end": 9782,
+      "reward": 0.0,
+      "length": 17,
+      "success": false,
+      "metrics": {
+        "steps": 17
+      }
+    },
+    {
+      "episode": 130,
+      "step_start": 9782,
+      "step_end": 9887,
+      "reward": 0.0,
+      "length": 105,
+      "success": false,
+      "metrics": {
+        "steps": 105
+      }
+    },
+    {
+      "episode": 131,
+      "step_start": 9887,
+      "step_end": 9891,
+      "reward": 0.9853061224489796,
+      "length": 4,
+      "success": true,
+      "metrics": {
+        "steps": 4
+      }
+    },
+    {
+      "episode": 132,
+      "step_start": 9891,
+      "step_end": 9905,
+      "reward": 0.0,
+      "length": 14,
+      "success": false,
+      "metrics": {
+        "steps": 14
+      }
+    },
+    {
+      "episode": 133,
+      "step_start": 9905,
+      "step_end": 9975,
+      "reward": 0.7428571428571429,
+      "length": 70,
+      "success": true,
+      "metrics": {
+        "steps": 70
+      }
+    },
+    {
+      "episode": 134,
+      "step_start": 9975,
+      "step_end": 10021,
+      "reward": 0.8310204081632653,
+      "length": 46,
+      "success": true,
+      "metrics": {
+        "steps": 46
+      }
+    },
+    {
+      "episode": 135,
+      "step_start": 10021,
+      "step_end": 10166,
+      "reward": 0.0,
+      "length": 145,
+      "success": false,
+      "metrics": {
+        "steps": 145
+      }
+    },
+    {
+      "episode": 136,
+      "step_start": 10166,
+      "step_end": 10190,
+      "reward": 0.0,
+      "length": 24,
+      "success": false,
+      "metrics": {
+        "steps": 24
+      }
+    },
+    {
+      "episode": 137,
+      "step_start": 10190,
+      "step_end": 10254,
+      "reward": 0.0,
+      "length": 64,
+      "success": false,
+      "metrics": {
+        "steps": 64
+      }
+    },
+    {
+      "episode": 138,
+      "step_start": 10254,
+      "step_end": 10267,
+      "reward": 0.9522448979591837,
+      "length": 13,
+      "success": true,
+      "metrics": {
+        "steps": 13
+      }
+    },
+    {
+      "episode": 139,
+      "step_start": 10267,
+      "step_end": 10341,
+      "reward": 0.7281632653061224,
+      "length": 74,
+      "success": true,
+      "metrics": {
+        "steps": 74
+      }
+    },
+    {
+      "episode": 140,
+      "step_start": 10341,
+      "step_end": 10352,
+      "reward": 0.0,
+      "length": 11,
+      "success": false,
+      "metrics": {
+        "steps": 11
+      }
+    },
+    {
+      "episode": 141,
+      "step_start": 10352,
+      "step_end": 10525,
+      "reward": 0.0,
+      "length": 173,
+      "success": false,
+      "metrics": {
+        "steps": 173
+      }
+    },
+    {
+      "episode": 142,
+      "step_start": 10525,
+      "step_end": 10770,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
+      "metrics": {
+        "steps": 245
+      }
+    },
+    {
+      "episode": 143,
+      "step_start": 10770,
+      "step_end": 10785,
+      "reward": 0.9448979591836735,
+      "length": 15,
+      "success": true,
+      "metrics": {
+        "steps": 15
+      }
+    },
+    {
+      "episode": 144,
+      "step_start": 10785,
+      "step_end": 11030,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
+      "metrics": {
+        "steps": 245
+      }
+    },
+    {
+      "episode": 145,
+      "step_start": 11030,
+      "step_end": 11048,
+      "reward": 0.0,
+      "length": 18,
+      "success": false,
+      "metrics": {
+        "steps": 18
+      }
+    },
+    {
+      "episode": 146,
+      "step_start": 11048,
+      "step_end": 11293,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
+      "metrics": {
+        "steps": 245
+      }
+    },
+    {
+      "episode": 147,
+      "step_start": 11293,
+      "step_end": 11447,
+      "reward": 0.4342857142857143,
+      "length": 154,
+      "success": true,
+      "metrics": {
+        "steps": 154
+      }
+    },
+    {
+      "episode": 148,
+      "step_start": 11447,
+      "step_end": 11503,
+      "reward": 0.7942857142857143,
+      "length": 56,
+      "success": true,
+      "metrics": {
+        "steps": 56
+      }
+    },
+    {
+      "episode": 149,
+      "step_start": 11503,
+      "step_end": 11748,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
+      "metrics": {
+        "steps": 245
+      }
+    },
+    {
+      "episode": 150,
+      "step_start": 11748,
+      "step_end": 11993,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
+      "metrics": {
+        "steps": 245
+      }
+    },
+    {
+      "episode": 151,
+      "step_start": 11993,
+      "step_end": 12184,
+      "reward": 0.0,
+      "length": 191,
+      "success": false,
+      "metrics": {
+        "steps": 191
+      }
+    },
+    {
+      "episode": 152,
+      "step_start": 12184,
+      "step_end": 12194,
+      "reward": 0.0,
+      "length": 10,
+      "success": false,
+      "metrics": {
+        "steps": 10
+      }
+    },
+    {
+      "episode": 153,
+      "step_start": 12194,
+      "step_end": 12439,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
+      "metrics": {
+        "steps": 245
+      }
+    },
+    {
+      "episode": 154,
+      "step_start": 12439,
+      "step_end": 12594,
+      "reward": 0.0,
+      "length": 155,
+      "success": false,
+      "metrics": {
+        "steps": 155
+      }
+    },
+    {
+      "episode": 155,
+      "step_start": 12594,
+      "step_end": 12697,
+      "reward": 0.0,
+      "length": 103,
+      "success": false,
+      "metrics": {
+        "steps": 103
+      }
+    },
+    {
+      "episode": 156,
+      "step_start": 12697,
+      "step_end": 12833,
+      "reward": 0.0,
+      "length": 136,
+      "success": false,
+      "metrics": {
+        "steps": 136
+      }
+    },
+    {
+      "episode": 157,
+      "step_start": 12833,
+      "step_end": 13078,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
+      "metrics": {
+        "steps": 245
+      }
+    },
+    {
+      "episode": 158,
+      "step_start": 13078,
+      "step_end": 13323,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
+      "metrics": {
+        "steps": 245
+      }
+    },
+    {
+      "episode": 159,
+      "step_start": 13323,
+      "step_end": 13347,
+      "reward": 0.0,
+      "length": 24,
+      "success": false,
+      "metrics": {
+        "steps": 24
+      }
+    },
+    {
       "episode": 160,
-      "step_start": 16984,
-      "step_end": 17229,
+      "step_start": 13347,
+      "step_end": 13592,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -1778,63 +1778,63 @@
     },
     {
       "episode": 161,
-      "step_start": 17229,
-      "step_end": 17234,
-      "reward": 0.9816326530612245,
-      "length": 5,
+      "step_start": 13592,
+      "step_end": 13618,
+      "reward": 0.9044897959183673,
+      "length": 26,
       "success": true,
       "metrics": {
-        "steps": 5
+        "steps": 26
       }
     },
     {
       "episode": 162,
-      "step_start": 17234,
-      "step_end": 17292,
+      "step_start": 13618,
+      "step_end": 13671,
       "reward": 0.0,
-      "length": 58,
+      "length": 53,
       "success": false,
       "metrics": {
-        "steps": 58
+        "steps": 53
       }
     },
     {
       "episode": 163,
-      "step_start": 17292,
-      "step_end": 17325,
-      "reward": 0.8787755102040816,
-      "length": 33,
+      "step_start": 13671,
+      "step_end": 13852,
+      "reward": 0.33510204081632655,
+      "length": 181,
       "success": true,
       "metrics": {
-        "steps": 33
+        "steps": 181
       }
     },
     {
       "episode": 164,
-      "step_start": 17325,
-      "step_end": 17422,
-      "reward": 0.0,
-      "length": 97,
-      "success": false,
+      "step_start": 13852,
+      "step_end": 13954,
+      "reward": 0.6253061224489795,
+      "length": 102,
+      "success": true,
       "metrics": {
-        "steps": 97
+        "steps": 102
       }
     },
     {
       "episode": 165,
-      "step_start": 17422,
-      "step_end": 17436,
-      "reward": 0.0,
-      "length": 14,
-      "success": false,
+      "step_start": 13954,
+      "step_end": 14095,
+      "reward": 0.4820408163265306,
+      "length": 141,
+      "success": true,
       "metrics": {
-        "steps": 14
+        "steps": 141
       }
     },
     {
       "episode": 166,
-      "step_start": 17436,
-      "step_end": 17681,
+      "step_start": 14095,
+      "step_end": 14340,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -1844,85 +1844,85 @@
     },
     {
       "episode": 167,
-      "step_start": 17681,
-      "step_end": 17846,
-      "reward": 0.3938775510204082,
-      "length": 165,
+      "step_start": 14340,
+      "step_end": 14494,
+      "reward": 0.4342857142857143,
+      "length": 154,
       "success": true,
       "metrics": {
-        "steps": 165
+        "steps": 154
       }
     },
     {
       "episode": 168,
-      "step_start": 17846,
-      "step_end": 17858,
-      "reward": 0.0,
-      "length": 12,
-      "success": false,
+      "step_start": 14494,
+      "step_end": 14537,
+      "reward": 0.8420408163265306,
+      "length": 43,
+      "success": true,
       "metrics": {
-        "steps": 12
+        "steps": 43
       }
     },
     {
       "episode": 169,
-      "step_start": 17858,
-      "step_end": 17876,
+      "step_start": 14537,
+      "step_end": 14782,
       "reward": 0.0,
-      "length": 18,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 18
+        "steps": 245
       }
     },
     {
       "episode": 170,
-      "step_start": 17876,
-      "step_end": 18121,
+      "step_start": 14782,
+      "step_end": 14814,
       "reward": 0.0,
-      "length": 245,
+      "length": 32,
       "success": false,
       "metrics": {
-        "steps": 245
+        "steps": 32
       }
     },
     {
       "episode": 171,
-      "step_start": 18121,
-      "step_end": 18366,
+      "step_start": 14814,
+      "step_end": 14905,
       "reward": 0.0,
-      "length": 245,
+      "length": 91,
       "success": false,
       "metrics": {
-        "steps": 245
+        "steps": 91
       }
     },
     {
       "episode": 172,
-      "step_start": 18366,
-      "step_end": 18388,
+      "step_start": 14905,
+      "step_end": 14965,
       "reward": 0.0,
-      "length": 22,
+      "length": 60,
       "success": false,
       "metrics": {
-        "steps": 22
+        "steps": 60
       }
     },
     {
       "episode": 173,
-      "step_start": 18388,
-      "step_end": 18444,
-      "reward": 0.7942857142857143,
-      "length": 56,
-      "success": true,
+      "step_start": 14965,
+      "step_end": 15069,
+      "reward": 0.0,
+      "length": 104,
+      "success": false,
       "metrics": {
-        "steps": 56
+        "steps": 104
       }
     },
     {
       "episode": 174,
-      "step_start": 18444,
-      "step_end": 18689,
+      "step_start": 15069,
+      "step_end": 15314,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -1932,19 +1932,30 @@
     },
     {
       "episode": 175,
-      "step_start": 18689,
-      "step_end": 18709,
+      "step_start": 15314,
+      "step_end": 15357,
       "reward": 0.0,
-      "length": 20,
+      "length": 43,
       "success": false,
       "metrics": {
-        "steps": 20
+        "steps": 43
       }
     },
     {
       "episode": 176,
-      "step_start": 18709,
-      "step_end": 18954,
+      "step_start": 15357,
+      "step_end": 15588,
+      "reward": 0.15142857142857147,
+      "length": 231,
+      "success": true,
+      "metrics": {
+        "steps": 231
+      }
+    },
+    {
+      "episode": 177,
+      "step_start": 15588,
+      "step_end": 15833,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -1953,64 +1964,53 @@
       }
     },
     {
-      "episode": 177,
-      "step_start": 18954,
-      "step_end": 18993,
+      "episode": 178,
+      "step_start": 15833,
+      "step_end": 15928,
       "reward": 0.0,
-      "length": 39,
+      "length": 95,
       "success": false,
       "metrics": {
-        "steps": 39
-      }
-    },
-    {
-      "episode": 178,
-      "step_start": 18993,
-      "step_end": 19032,
-      "reward": 0.8567346938775511,
-      "length": 39,
-      "success": true,
-      "metrics": {
-        "steps": 39
+        "steps": 95
       }
     },
     {
       "episode": 179,
-      "step_start": 19032,
-      "step_end": 19111,
-      "reward": 0.709795918367347,
-      "length": 79,
+      "step_start": 15928,
+      "step_end": 15990,
+      "reward": 0.7722448979591837,
+      "length": 62,
       "success": true,
       "metrics": {
-        "steps": 79
+        "steps": 62
       }
     },
     {
       "episode": 180,
-      "step_start": 19111,
-      "step_end": 19164,
-      "reward": 0.8053061224489796,
-      "length": 53,
-      "success": true,
+      "step_start": 15990,
+      "step_end": 16050,
+      "reward": 0.0,
+      "length": 60,
+      "success": false,
       "metrics": {
-        "steps": 53
+        "steps": 60
       }
     },
     {
       "episode": 181,
-      "step_start": 19164,
-      "step_end": 19194,
-      "reward": 0.889795918367347,
-      "length": 30,
-      "success": true,
+      "step_start": 16050,
+      "step_end": 16295,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 30
+        "steps": 245
       }
     },
     {
       "episode": 182,
-      "step_start": 19194,
-      "step_end": 19439,
+      "step_start": 16295,
+      "step_end": 16540,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2020,41 +2020,41 @@
     },
     {
       "episode": 183,
-      "step_start": 19439,
-      "step_end": 19476,
-      "reward": 0.8640816326530611,
-      "length": 37,
-      "success": true,
+      "step_start": 16540,
+      "step_end": 16785,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 37
+        "steps": 245
       }
     },
     {
       "episode": 184,
-      "step_start": 19476,
-      "step_end": 19514,
-      "reward": 0.8604081632653061,
-      "length": 38,
-      "success": true,
+      "step_start": 16785,
+      "step_end": 17030,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 38
+        "steps": 245
       }
     },
     {
       "episode": 185,
-      "step_start": 19514,
-      "step_end": 19662,
-      "reward": 0.4563265306122448,
-      "length": 148,
-      "success": true,
+      "step_start": 17030,
+      "step_end": 17275,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 148
+        "steps": 245
       }
     },
     {
       "episode": 186,
-      "step_start": 19662,
-      "step_end": 19907,
+      "step_start": 17275,
+      "step_end": 17520,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2064,19 +2064,19 @@
     },
     {
       "episode": 187,
-      "step_start": 19907,
-      "step_end": 19925,
-      "reward": 0.9338775510204081,
-      "length": 18,
-      "success": true,
+      "step_start": 17520,
+      "step_end": 17666,
+      "reward": 0.0,
+      "length": 146,
+      "success": false,
       "metrics": {
-        "steps": 18
+        "steps": 146
       }
     },
     {
       "episode": 188,
-      "step_start": 19925,
-      "step_end": 20170,
+      "step_start": 17666,
+      "step_end": 17911,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2086,19 +2086,19 @@
     },
     {
       "episode": 189,
-      "step_start": 20170,
-      "step_end": 20310,
-      "reward": 0.48571428571428577,
-      "length": 140,
-      "success": true,
+      "step_start": 17911,
+      "step_end": 18156,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 140
+        "steps": 245
       }
     },
     {
       "episode": 190,
-      "step_start": 20310,
-      "step_end": 20555,
+      "step_start": 18156,
+      "step_end": 18401,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2108,8 +2108,8 @@
     },
     {
       "episode": 191,
-      "step_start": 20555,
-      "step_end": 20800,
+      "step_start": 18401,
+      "step_end": 18646,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2119,85 +2119,8 @@
     },
     {
       "episode": 192,
-      "step_start": 20800,
-      "step_end": 20931,
-      "reward": 0.0,
-      "length": 131,
-      "success": false,
-      "metrics": {
-        "steps": 131
-      }
-    },
-    {
-      "episode": 193,
-      "step_start": 20931,
-      "step_end": 21130,
-      "reward": 0.2689795918367347,
-      "length": 199,
-      "success": true,
-      "metrics": {
-        "steps": 199
-      }
-    },
-    {
-      "episode": 194,
-      "step_start": 21130,
-      "step_end": 21146,
-      "reward": 0.0,
-      "length": 16,
-      "success": false,
-      "metrics": {
-        "steps": 16
-      }
-    },
-    {
-      "episode": 195,
-      "step_start": 21146,
-      "step_end": 21204,
-      "reward": 0.0,
-      "length": 58,
-      "success": false,
-      "metrics": {
-        "steps": 58
-      }
-    },
-    {
-      "episode": 196,
-      "step_start": 21204,
-      "step_end": 21262,
-      "reward": 0.7869387755102041,
-      "length": 58,
-      "success": true,
-      "metrics": {
-        "steps": 58
-      }
-    },
-    {
-      "episode": 197,
-      "step_start": 21262,
-      "step_end": 21453,
-      "reward": 0.0,
-      "length": 191,
-      "success": false,
-      "metrics": {
-        "steps": 191
-      }
-    },
-    {
-      "episode": 198,
-      "step_start": 21453,
-      "step_end": 21471,
-      "reward": 0.9338775510204081,
-      "length": 18,
-      "success": true,
-      "metrics": {
-        "steps": 18
-      }
-    },
-    {
-      "episode": 199,
-      "step_start": 21471,
-      "step_end": 21716,
+      "step_start": 18646,
+      "step_end": 18891,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2206,9 +2129,86 @@
       }
     },
     {
+      "episode": 193,
+      "step_start": 18891,
+      "step_end": 19136,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
+      "metrics": {
+        "steps": 245
+      }
+    },
+    {
+      "episode": 194,
+      "step_start": 19136,
+      "step_end": 19344,
+      "reward": 0.23591836734693883,
+      "length": 208,
+      "success": true,
+      "metrics": {
+        "steps": 208
+      }
+    },
+    {
+      "episode": 195,
+      "step_start": 19344,
+      "step_end": 19589,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
+      "metrics": {
+        "steps": 245
+      }
+    },
+    {
+      "episode": 196,
+      "step_start": 19589,
+      "step_end": 19675,
+      "reward": 0.6840816326530612,
+      "length": 86,
+      "success": true,
+      "metrics": {
+        "steps": 86
+      }
+    },
+    {
+      "episode": 197,
+      "step_start": 19675,
+      "step_end": 19736,
+      "reward": 0.7759183673469388,
+      "length": 61,
+      "success": true,
+      "metrics": {
+        "steps": 61
+      }
+    },
+    {
+      "episode": 198,
+      "step_start": 19736,
+      "step_end": 19981,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
+      "metrics": {
+        "steps": 245
+      }
+    },
+    {
+      "episode": 199,
+      "step_start": 19981,
+      "step_end": 20143,
+      "reward": 0.40489795918367344,
+      "length": 162,
+      "success": true,
+      "metrics": {
+        "steps": 162
+      }
+    },
+    {
       "episode": 200,
-      "step_start": 21716,
-      "step_end": 21961,
+      "step_start": 20143,
+      "step_end": 20388,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2218,8 +2218,8 @@
     },
     {
       "episode": 201,
-      "step_start": 21961,
-      "step_end": 22206,
+      "step_start": 20388,
+      "step_end": 20633,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2229,41 +2229,30 @@
     },
     {
       "episode": 202,
-      "step_start": 22206,
-      "step_end": 22451,
-      "reward": 0.0,
-      "length": 245,
-      "success": false,
+      "step_start": 20633,
+      "step_end": 20640,
+      "reward": 0.9742857142857143,
+      "length": 7,
+      "success": true,
       "metrics": {
-        "steps": 245
+        "steps": 7
       }
     },
     {
       "episode": 203,
-      "step_start": 22451,
-      "step_end": 22627,
-      "reward": 0.35346938775510206,
-      "length": 176,
-      "success": true,
+      "step_start": 20640,
+      "step_end": 20805,
+      "reward": 0.0,
+      "length": 165,
+      "success": false,
       "metrics": {
-        "steps": 176
+        "steps": 165
       }
     },
     {
       "episode": 204,
-      "step_start": 22627,
-      "step_end": 22630,
-      "reward": 0.9889795918367347,
-      "length": 3,
-      "success": true,
-      "metrics": {
-        "steps": 3
-      }
-    },
-    {
-      "episode": 205,
-      "step_start": 22630,
-      "step_end": 22875,
+      "step_start": 20805,
+      "step_end": 21050,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2272,9 +2261,20 @@
       }
     },
     {
+      "episode": 205,
+      "step_start": 21050,
+      "step_end": 21068,
+      "reward": 0.9338775510204081,
+      "length": 18,
+      "success": true,
+      "metrics": {
+        "steps": 18
+      }
+    },
+    {
       "episode": 206,
-      "step_start": 22875,
-      "step_end": 23120,
+      "step_start": 21068,
+      "step_end": 21313,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2284,19 +2284,19 @@
     },
     {
       "episode": 207,
-      "step_start": 23120,
-      "step_end": 23365,
+      "step_start": 21313,
+      "step_end": 21385,
       "reward": 0.0,
-      "length": 245,
+      "length": 72,
       "success": false,
       "metrics": {
-        "steps": 245
+        "steps": 72
       }
     },
     {
       "episode": 208,
-      "step_start": 23365,
-      "step_end": 23610,
+      "step_start": 21385,
+      "step_end": 21630,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2306,30 +2306,30 @@
     },
     {
       "episode": 209,
-      "step_start": 23610,
-      "step_end": 23834,
-      "reward": 0.17714285714285716,
-      "length": 224,
-      "success": true,
+      "step_start": 21630,
+      "step_end": 21688,
+      "reward": 0.0,
+      "length": 58,
+      "success": false,
       "metrics": {
-        "steps": 224
+        "steps": 58
       }
     },
     {
       "episode": 210,
-      "step_start": 23834,
-      "step_end": 24079,
-      "reward": 0.0,
-      "length": 245,
-      "success": false,
+      "step_start": 21688,
+      "step_end": 21732,
+      "reward": 0.8383673469387756,
+      "length": 44,
+      "success": true,
       "metrics": {
-        "steps": 245
+        "steps": 44
       }
     },
     {
       "episode": 211,
-      "step_start": 24079,
-      "step_end": 24324,
+      "step_start": 21732,
+      "step_end": 21977,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2339,41 +2339,41 @@
     },
     {
       "episode": 212,
-      "step_start": 24324,
-      "step_end": 24569,
-      "reward": 0.0,
-      "length": 245,
-      "success": false,
+      "step_start": 21977,
+      "step_end": 22022,
+      "reward": 0.8346938775510204,
+      "length": 45,
+      "success": true,
       "metrics": {
-        "steps": 245
+        "steps": 45
       }
     },
     {
       "episode": 213,
-      "step_start": 24569,
-      "step_end": 24642,
-      "reward": 0.7318367346938774,
-      "length": 73,
+      "step_start": 22022,
+      "step_end": 22207,
+      "reward": 0.3204081632653062,
+      "length": 185,
       "success": true,
       "metrics": {
-        "steps": 73
+        "steps": 185
       }
     },
     {
       "episode": 214,
-      "step_start": 24642,
-      "step_end": 24887,
-      "reward": 0.0,
-      "length": 245,
-      "success": false,
+      "step_start": 22207,
+      "step_end": 22238,
+      "reward": 0.8861224489795918,
+      "length": 31,
+      "success": true,
       "metrics": {
-        "steps": 245
+        "steps": 31
       }
     },
     {
       "episode": 215,
-      "step_start": 24887,
-      "step_end": 25132,
+      "step_start": 22238,
+      "step_end": 22483,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2383,162 +2383,162 @@
     },
     {
       "episode": 216,
-      "step_start": 25132,
-      "step_end": 25322,
-      "reward": 0.30204081632653057,
-      "length": 190,
-      "success": true,
+      "step_start": 22483,
+      "step_end": 22661,
+      "reward": 0.0,
+      "length": 178,
+      "success": false,
       "metrics": {
-        "steps": 190
+        "steps": 178
       }
     },
     {
       "episode": 217,
-      "step_start": 25322,
-      "step_end": 25411,
-      "reward": 0.6730612244897959,
-      "length": 89,
-      "success": true,
+      "step_start": 22661,
+      "step_end": 22844,
+      "reward": 0.0,
+      "length": 183,
+      "success": false,
       "metrics": {
-        "steps": 89
+        "steps": 183
       }
     },
     {
       "episode": 218,
-      "step_start": 25411,
-      "step_end": 25415,
-      "reward": 0.9853061224489796,
-      "length": 4,
+      "step_start": 22844,
+      "step_end": 22857,
+      "reward": 0.9522448979591837,
+      "length": 13,
       "success": true,
       "metrics": {
-        "steps": 4
+        "steps": 13
       }
     },
     {
       "episode": 219,
-      "step_start": 25415,
-      "step_end": 25660,
+      "step_start": 22857,
+      "step_end": 22930,
       "reward": 0.0,
-      "length": 245,
+      "length": 73,
       "success": false,
       "metrics": {
-        "steps": 245
+        "steps": 73
       }
     },
     {
       "episode": 220,
-      "step_start": 25660,
-      "step_end": 25905,
-      "reward": 0.0,
-      "length": 245,
-      "success": false,
+      "step_start": 22930,
+      "step_end": 23147,
+      "reward": 0.20285714285714285,
+      "length": 217,
+      "success": true,
       "metrics": {
-        "steps": 245
+        "steps": 217
       }
     },
     {
       "episode": 221,
-      "step_start": 25905,
-      "step_end": 26150,
+      "step_start": 23147,
+      "step_end": 23163,
       "reward": 0.0,
-      "length": 245,
+      "length": 16,
       "success": false,
       "metrics": {
-        "steps": 245
+        "steps": 16
       }
     },
     {
       "episode": 222,
-      "step_start": 26150,
-      "step_end": 26395,
+      "step_start": 23163,
+      "step_end": 23240,
       "reward": 0.0,
-      "length": 245,
+      "length": 77,
       "success": false,
       "metrics": {
-        "steps": 245
+        "steps": 77
       }
     },
     {
       "episode": 223,
-      "step_start": 26395,
-      "step_end": 26473,
-      "reward": 0.713469387755102,
-      "length": 78,
-      "success": true,
+      "step_start": 23240,
+      "step_end": 23485,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 78
+        "steps": 245
       }
     },
     {
       "episode": 224,
-      "step_start": 26473,
-      "step_end": 26718,
+      "step_start": 23485,
+      "step_end": 23570,
       "reward": 0.0,
-      "length": 245,
+      "length": 85,
       "success": false,
       "metrics": {
-        "steps": 245
+        "steps": 85
       }
     },
     {
       "episode": 225,
-      "step_start": 26718,
-      "step_end": 26740,
+      "step_start": 23570,
+      "step_end": 23815,
       "reward": 0.0,
-      "length": 22,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 22
+        "steps": 245
       }
     },
     {
       "episode": 226,
-      "step_start": 26740,
-      "step_end": 26985,
+      "step_start": 23815,
+      "step_end": 23909,
       "reward": 0.0,
-      "length": 245,
+      "length": 94,
       "success": false,
       "metrics": {
-        "steps": 245
+        "steps": 94
       }
     },
     {
       "episode": 227,
-      "step_start": 26985,
-      "step_end": 27230,
-      "reward": 0.0,
-      "length": 245,
-      "success": false,
+      "step_start": 23909,
+      "step_end": 24120,
+      "reward": 0.2248979591836735,
+      "length": 211,
+      "success": true,
       "metrics": {
-        "steps": 245
+        "steps": 211
       }
     },
     {
       "episode": 228,
-      "step_start": 27230,
-      "step_end": 27475,
-      "reward": 0.0,
-      "length": 245,
-      "success": false,
+      "step_start": 24120,
+      "step_end": 24345,
+      "reward": 0.173469387755102,
+      "length": 225,
+      "success": true,
       "metrics": {
-        "steps": 245
+        "steps": 225
       }
     },
     {
       "episode": 229,
-      "step_start": 27475,
-      "step_end": 27720,
-      "reward": 0.0,
-      "length": 245,
-      "success": false,
+      "step_start": 24345,
+      "step_end": 24364,
+      "reward": 0.9302040816326531,
+      "length": 19,
+      "success": true,
       "metrics": {
-        "steps": 245
+        "steps": 19
       }
     },
     {
       "episode": 230,
-      "step_start": 27720,
-      "step_end": 27965,
+      "step_start": 24364,
+      "step_end": 24609,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2548,8 +2548,8 @@
     },
     {
       "episode": 231,
-      "step_start": 27965,
-      "step_end": 28210,
+      "step_start": 24609,
+      "step_end": 24854,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2559,19 +2559,19 @@
     },
     {
       "episode": 232,
-      "step_start": 28210,
-      "step_end": 28455,
+      "step_start": 24854,
+      "step_end": 24860,
       "reward": 0.0,
-      "length": 245,
+      "length": 6,
       "success": false,
       "metrics": {
-        "steps": 245
+        "steps": 6
       }
     },
     {
       "episode": 233,
-      "step_start": 28455,
-      "step_end": 28700,
+      "step_start": 24860,
+      "step_end": 25105,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2581,8 +2581,8 @@
     },
     {
       "episode": 234,
-      "step_start": 28700,
-      "step_end": 28945,
+      "step_start": 25105,
+      "step_end": 25350,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2592,19 +2592,19 @@
     },
     {
       "episode": 235,
-      "step_start": 28945,
-      "step_end": 28983,
-      "reward": 0.8604081632653061,
-      "length": 38,
-      "success": true,
+      "step_start": 25350,
+      "step_end": 25595,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 38
+        "steps": 245
       }
     },
     {
       "episode": 236,
-      "step_start": 28983,
-      "step_end": 29228,
+      "step_start": 25595,
+      "step_end": 25840,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2614,19 +2614,19 @@
     },
     {
       "episode": 237,
-      "step_start": 29228,
-      "step_end": 29473,
+      "step_start": 25840,
+      "step_end": 25869,
       "reward": 0.0,
-      "length": 245,
+      "length": 29,
       "success": false,
       "metrics": {
-        "steps": 245
+        "steps": 29
       }
     },
     {
       "episode": 238,
-      "step_start": 29473,
-      "step_end": 29718,
+      "step_start": 25869,
+      "step_end": 26114,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2636,19 +2636,19 @@
     },
     {
       "episode": 239,
-      "step_start": 29718,
-      "step_end": 29739,
-      "reward": 0.9228571428571428,
-      "length": 21,
-      "success": true,
+      "step_start": 26114,
+      "step_end": 26359,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 21
+        "steps": 245
       }
     },
     {
       "episode": 240,
-      "step_start": 29739,
-      "step_end": 29984,
+      "step_start": 26359,
+      "step_end": 26604,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2658,8 +2658,8 @@
     },
     {
       "episode": 241,
-      "step_start": 29984,
-      "step_end": 30229,
+      "step_start": 26604,
+      "step_end": 26849,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2669,8 +2669,8 @@
     },
     {
       "episode": 242,
-      "step_start": 30229,
-      "step_end": 30474,
+      "step_start": 26849,
+      "step_end": 27094,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2680,8 +2680,8 @@
     },
     {
       "episode": 243,
-      "step_start": 30474,
-      "step_end": 30719,
+      "step_start": 27094,
+      "step_end": 27339,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2691,8 +2691,8 @@
     },
     {
       "episode": 244,
-      "step_start": 30719,
-      "step_end": 30964,
+      "step_start": 27339,
+      "step_end": 27584,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2702,8 +2702,8 @@
     },
     {
       "episode": 245,
-      "step_start": 30964,
-      "step_end": 31209,
+      "step_start": 27584,
+      "step_end": 27829,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2713,8 +2713,8 @@
     },
     {
       "episode": 246,
-      "step_start": 31209,
-      "step_end": 31454,
+      "step_start": 27829,
+      "step_end": 28074,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2724,19 +2724,8 @@
     },
     {
       "episode": 247,
-      "step_start": 31454,
-      "step_end": 31457,
-      "reward": 0.9889795918367347,
-      "length": 3,
-      "success": true,
-      "metrics": {
-        "steps": 3
-      }
-    },
-    {
-      "episode": 248,
-      "step_start": 31457,
-      "step_end": 31702,
+      "step_start": 28074,
+      "step_end": 28319,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2745,9 +2734,20 @@
       }
     },
     {
+      "episode": 248,
+      "step_start": 28319,
+      "step_end": 28382,
+      "reward": 0.0,
+      "length": 63,
+      "success": false,
+      "metrics": {
+        "steps": 63
+      }
+    },
+    {
       "episode": 249,
-      "step_start": 31702,
-      "step_end": 31947,
+      "step_start": 28382,
+      "step_end": 28627,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2757,8 +2757,8 @@
     },
     {
       "episode": 250,
-      "step_start": 31947,
-      "step_end": 32192,
+      "step_start": 28627,
+      "step_end": 28872,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2768,8 +2768,8 @@
     },
     {
       "episode": 251,
-      "step_start": 32192,
-      "step_end": 32437,
+      "step_start": 28872,
+      "step_end": 29117,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2779,19 +2779,19 @@
     },
     {
       "episode": 252,
-      "step_start": 32437,
-      "step_end": 32682,
+      "step_start": 29117,
+      "step_end": 29135,
       "reward": 0.0,
-      "length": 245,
+      "length": 18,
       "success": false,
       "metrics": {
-        "steps": 245
+        "steps": 18
       }
     },
     {
       "episode": 253,
-      "step_start": 32682,
-      "step_end": 32927,
+      "step_start": 29135,
+      "step_end": 29380,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2801,8 +2801,8 @@
     },
     {
       "episode": 254,
-      "step_start": 32927,
-      "step_end": 33172,
+      "step_start": 29380,
+      "step_end": 29625,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2812,30 +2812,30 @@
     },
     {
       "episode": 255,
-      "step_start": 33172,
-      "step_end": 33188,
-      "reward": 0.9412244897959183,
-      "length": 16,
-      "success": true,
+      "step_start": 29625,
+      "step_end": 29870,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 16
+        "steps": 245
       }
     },
     {
       "episode": 256,
-      "step_start": 33188,
-      "step_end": 33222,
+      "step_start": 29870,
+      "step_end": 30115,
       "reward": 0.0,
-      "length": 34,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 34
+        "steps": 245
       }
     },
     {
       "episode": 257,
-      "step_start": 33222,
-      "step_end": 33467,
+      "step_start": 30115,
+      "step_end": 30360,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2845,8 +2845,19 @@
     },
     {
       "episode": 258,
-      "step_start": 33467,
-      "step_end": 33712,
+      "step_start": 30360,
+      "step_end": 30383,
+      "reward": 0.9155102040816326,
+      "length": 23,
+      "success": true,
+      "metrics": {
+        "steps": 23
+      }
+    },
+    {
+      "episode": 259,
+      "step_start": 30383,
+      "step_end": 30628,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2855,20 +2866,9 @@
       }
     },
     {
-      "episode": 259,
-      "step_start": 33712,
-      "step_end": 33738,
-      "reward": 0.0,
-      "length": 26,
-      "success": false,
-      "metrics": {
-        "steps": 26
-      }
-    },
-    {
       "episode": 260,
-      "step_start": 33738,
-      "step_end": 33983,
+      "step_start": 30628,
+      "step_end": 30873,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2878,8 +2878,8 @@
     },
     {
       "episode": 261,
-      "step_start": 33983,
-      "step_end": 34228,
+      "step_start": 30873,
+      "step_end": 31118,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2889,19 +2889,19 @@
     },
     {
       "episode": 262,
-      "step_start": 34228,
-      "step_end": 34473,
+      "step_start": 31118,
+      "step_end": 31153,
       "reward": 0.0,
-      "length": 245,
+      "length": 35,
       "success": false,
       "metrics": {
-        "steps": 245
+        "steps": 35
       }
     },
     {
       "episode": 263,
-      "step_start": 34473,
-      "step_end": 34718,
+      "step_start": 31153,
+      "step_end": 31398,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2911,19 +2911,19 @@
     },
     {
       "episode": 264,
-      "step_start": 34718,
-      "step_end": 34791,
-      "reward": 0.7318367346938774,
-      "length": 73,
-      "success": true,
+      "step_start": 31398,
+      "step_end": 31643,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 73
+        "steps": 245
       }
     },
     {
       "episode": 265,
-      "step_start": 34791,
-      "step_end": 35036,
+      "step_start": 31643,
+      "step_end": 31888,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2933,8 +2933,8 @@
     },
     {
       "episode": 266,
-      "step_start": 35036,
-      "step_end": 35281,
+      "step_start": 31888,
+      "step_end": 32133,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2944,8 +2944,8 @@
     },
     {
       "episode": 267,
-      "step_start": 35281,
-      "step_end": 35526,
+      "step_start": 32133,
+      "step_end": 32378,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2955,19 +2955,19 @@
     },
     {
       "episode": 268,
-      "step_start": 35526,
-      "step_end": 35665,
+      "step_start": 32378,
+      "step_end": 32623,
       "reward": 0.0,
-      "length": 139,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 139
+        "steps": 245
       }
     },
     {
       "episode": 269,
-      "step_start": 35665,
-      "step_end": 35910,
+      "step_start": 32623,
+      "step_end": 32868,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2977,19 +2977,19 @@
     },
     {
       "episode": 270,
-      "step_start": 35910,
-      "step_end": 35931,
+      "step_start": 32868,
+      "step_end": 33113,
       "reward": 0.0,
-      "length": 21,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 21
+        "steps": 245
       }
     },
     {
       "episode": 271,
-      "step_start": 35931,
-      "step_end": 36176,
+      "step_start": 33113,
+      "step_end": 33358,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -2999,8 +2999,8 @@
     },
     {
       "episode": 272,
-      "step_start": 36176,
-      "step_end": 36421,
+      "step_start": 33358,
+      "step_end": 33603,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3010,41 +3010,41 @@
     },
     {
       "episode": 273,
-      "step_start": 36421,
-      "step_end": 36450,
-      "reward": 0.8934693877551021,
-      "length": 29,
-      "success": true,
+      "step_start": 33603,
+      "step_end": 33644,
+      "reward": 0.0,
+      "length": 41,
+      "success": false,
       "metrics": {
-        "steps": 29
+        "steps": 41
       }
     },
     {
       "episode": 274,
-      "step_start": 36450,
-      "step_end": 36562,
-      "reward": 0.5885714285714285,
-      "length": 112,
-      "success": true,
+      "step_start": 33644,
+      "step_end": 33889,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 112
+        "steps": 245
       }
     },
     {
       "episode": 275,
-      "step_start": 36562,
-      "step_end": 36666,
+      "step_start": 33889,
+      "step_end": 34134,
       "reward": 0.0,
-      "length": 104,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 104
+        "steps": 245
       }
     },
     {
       "episode": 276,
-      "step_start": 36666,
-      "step_end": 36911,
+      "step_start": 34134,
+      "step_end": 34379,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3054,8 +3054,8 @@
     },
     {
       "episode": 277,
-      "step_start": 36911,
-      "step_end": 37156,
+      "step_start": 34379,
+      "step_end": 34624,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3065,8 +3065,8 @@
     },
     {
       "episode": 278,
-      "step_start": 37156,
-      "step_end": 37401,
+      "step_start": 34624,
+      "step_end": 34869,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3076,19 +3076,8 @@
     },
     {
       "episode": 279,
-      "step_start": 37401,
-      "step_end": 37431,
-      "reward": 0.889795918367347,
-      "length": 30,
-      "success": true,
-      "metrics": {
-        "steps": 30
-      }
-    },
-    {
-      "episode": 280,
-      "step_start": 37431,
-      "step_end": 37676,
+      "step_start": 34869,
+      "step_end": 35114,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3097,9 +3086,20 @@
       }
     },
     {
+      "episode": 280,
+      "step_start": 35114,
+      "step_end": 35311,
+      "reward": 0.0,
+      "length": 197,
+      "success": false,
+      "metrics": {
+        "steps": 197
+      }
+    },
+    {
       "episode": 281,
-      "step_start": 37676,
-      "step_end": 37921,
+      "step_start": 35311,
+      "step_end": 35556,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3109,151 +3109,151 @@
     },
     {
       "episode": 282,
-      "step_start": 37921,
-      "step_end": 37977,
-      "reward": 0.7942857142857143,
-      "length": 56,
+      "step_start": 35556,
+      "step_end": 35592,
+      "reward": 0.8677551020408163,
+      "length": 36,
       "success": true,
       "metrics": {
-        "steps": 56
+        "steps": 36
       }
     },
     {
       "episode": 283,
-      "step_start": 37977,
-      "step_end": 38081,
+      "step_start": 35592,
+      "step_end": 35837,
       "reward": 0.0,
-      "length": 104,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 104
+        "steps": 245
       }
     },
     {
       "episode": 284,
-      "step_start": 38081,
-      "step_end": 38106,
+      "step_start": 35837,
+      "step_end": 35852,
       "reward": 0.0,
-      "length": 25,
+      "length": 15,
       "success": false,
       "metrics": {
-        "steps": 25
+        "steps": 15
       }
     },
     {
       "episode": 285,
-      "step_start": 38106,
-      "step_end": 38166,
-      "reward": 0.7795918367346939,
-      "length": 60,
-      "success": true,
+      "step_start": 35852,
+      "step_end": 36097,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 60
+        "steps": 245
       }
     },
     {
       "episode": 286,
-      "step_start": 38166,
-      "step_end": 38206,
+      "step_start": 36097,
+      "step_end": 36143,
       "reward": 0.0,
-      "length": 40,
+      "length": 46,
       "success": false,
       "metrics": {
-        "steps": 40
+        "steps": 46
       }
     },
     {
       "episode": 287,
-      "step_start": 38206,
-      "step_end": 38254,
-      "reward": 0.0,
-      "length": 48,
-      "success": false,
+      "step_start": 36143,
+      "step_end": 36338,
+      "reward": 0.28367346938775506,
+      "length": 195,
+      "success": true,
       "metrics": {
-        "steps": 48
+        "steps": 195
       }
     },
     {
       "episode": 288,
-      "step_start": 38254,
-      "step_end": 38264,
-      "reward": 0.963265306122449,
-      "length": 10,
-      "success": true,
+      "step_start": 36338,
+      "step_end": 36583,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 10
+        "steps": 245
       }
     },
     {
       "episode": 289,
-      "step_start": 38264,
-      "step_end": 38387,
+      "step_start": 36583,
+      "step_end": 36828,
       "reward": 0.0,
-      "length": 123,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 123
+        "steps": 245
       }
     },
     {
       "episode": 290,
-      "step_start": 38387,
-      "step_end": 38497,
-      "reward": 0.5959183673469388,
-      "length": 110,
-      "success": true,
+      "step_start": 36828,
+      "step_end": 37073,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 110
+        "steps": 245
       }
     },
     {
       "episode": 291,
-      "step_start": 38497,
-      "step_end": 38679,
+      "step_start": 37073,
+      "step_end": 37318,
       "reward": 0.0,
-      "length": 182,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 182
+        "steps": 245
       }
     },
     {
       "episode": 292,
-      "step_start": 38679,
-      "step_end": 38716,
-      "reward": 0.8640816326530611,
-      "length": 37,
-      "success": true,
+      "step_start": 37318,
+      "step_end": 37563,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 37
+        "steps": 245
       }
     },
     {
       "episode": 293,
-      "step_start": 38716,
-      "step_end": 38795,
+      "step_start": 37563,
+      "step_end": 37808,
       "reward": 0.0,
-      "length": 79,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 79
+        "steps": 245
       }
     },
     {
       "episode": 294,
-      "step_start": 38795,
-      "step_end": 38913,
-      "reward": 0.5665306122448979,
-      "length": 118,
-      "success": true,
+      "step_start": 37808,
+      "step_end": 38053,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 118
+        "steps": 245
       }
     },
     {
       "episode": 295,
-      "step_start": 38913,
-      "step_end": 39158,
+      "step_start": 38053,
+      "step_end": 38298,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3263,30 +3263,30 @@
     },
     {
       "episode": 296,
-      "step_start": 39158,
-      "step_end": 39194,
+      "step_start": 38298,
+      "step_end": 38543,
       "reward": 0.0,
-      "length": 36,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 36
+        "steps": 245
       }
     },
     {
       "episode": 297,
-      "step_start": 39194,
-      "step_end": 39385,
+      "step_start": 38543,
+      "step_end": 38788,
       "reward": 0.0,
-      "length": 191,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 191
+        "steps": 245
       }
     },
     {
       "episode": 298,
-      "step_start": 39385,
-      "step_end": 39630,
+      "step_start": 38788,
+      "step_end": 39033,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3296,8 +3296,8 @@
     },
     {
       "episode": 299,
-      "step_start": 39630,
-      "step_end": 39875,
+      "step_start": 39033,
+      "step_end": 39278,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3307,19 +3307,19 @@
     },
     {
       "episode": 300,
-      "step_start": 39875,
-      "step_end": 40026,
-      "reward": 0.4453061224489796,
-      "length": 151,
-      "success": true,
+      "step_start": 39278,
+      "step_end": 39523,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 151
+        "steps": 245
       }
     },
     {
       "episode": 301,
-      "step_start": 40026,
-      "step_end": 40271,
+      "step_start": 39523,
+      "step_end": 39768,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3329,8 +3329,8 @@
     },
     {
       "episode": 302,
-      "step_start": 40271,
-      "step_end": 40516,
+      "step_start": 39768,
+      "step_end": 40013,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3340,19 +3340,19 @@
     },
     {
       "episode": 303,
-      "step_start": 40516,
-      "step_end": 40629,
-      "reward": 0.5848979591836735,
-      "length": 113,
-      "success": true,
+      "step_start": 40013,
+      "step_end": 40258,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 113
+        "steps": 245
       }
     },
     {
       "episode": 304,
-      "step_start": 40629,
-      "step_end": 40874,
+      "step_start": 40258,
+      "step_end": 40503,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3362,8 +3362,8 @@
     },
     {
       "episode": 305,
-      "step_start": 40874,
-      "step_end": 41119,
+      "step_start": 40503,
+      "step_end": 40748,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3373,19 +3373,19 @@
     },
     {
       "episode": 306,
-      "step_start": 41119,
-      "step_end": 41311,
+      "step_start": 40748,
+      "step_end": 40993,
       "reward": 0.0,
-      "length": 192,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 192
+        "steps": 245
       }
     },
     {
       "episode": 307,
-      "step_start": 41311,
-      "step_end": 41556,
+      "step_start": 40993,
+      "step_end": 41238,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3395,8 +3395,8 @@
     },
     {
       "episode": 308,
-      "step_start": 41556,
-      "step_end": 41801,
+      "step_start": 41238,
+      "step_end": 41483,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3406,107 +3406,107 @@
     },
     {
       "episode": 309,
-      "step_start": 41801,
-      "step_end": 41830,
-      "reward": 0.8934693877551021,
-      "length": 29,
-      "success": true,
+      "step_start": 41483,
+      "step_end": 41728,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 29
+        "steps": 245
       }
     },
     {
       "episode": 310,
-      "step_start": 41830,
-      "step_end": 41963,
+      "step_start": 41728,
+      "step_end": 41973,
       "reward": 0.0,
-      "length": 133,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 133
+        "steps": 245
       }
     },
     {
       "episode": 311,
-      "step_start": 41963,
-      "step_end": 42000,
+      "step_start": 41973,
+      "step_end": 41986,
       "reward": 0.0,
-      "length": 37,
+      "length": 13,
       "success": false,
       "metrics": {
-        "steps": 37
+        "steps": 13
       }
     },
     {
       "episode": 312,
-      "step_start": 42000,
-      "step_end": 42062,
-      "reward": 0.7722448979591837,
-      "length": 62,
+      "step_start": 41986,
+      "step_end": 42024,
+      "reward": 0.8604081632653061,
+      "length": 38,
       "success": true,
       "metrics": {
-        "steps": 62
+        "steps": 38
       }
     },
     {
       "episode": 313,
-      "step_start": 42062,
-      "step_end": 42192,
-      "reward": 0.5224489795918367,
-      "length": 130,
-      "success": true,
+      "step_start": 42024,
+      "step_end": 42269,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 130
+        "steps": 245
       }
     },
     {
       "episode": 314,
-      "step_start": 42192,
-      "step_end": 42272,
+      "step_start": 42269,
+      "step_end": 42322,
       "reward": 0.0,
-      "length": 80,
+      "length": 53,
       "success": false,
       "metrics": {
-        "steps": 80
+        "steps": 53
       }
     },
     {
       "episode": 315,
-      "step_start": 42272,
-      "step_end": 42311,
-      "reward": 0.0,
-      "length": 39,
-      "success": false,
+      "step_start": 42322,
+      "step_end": 42445,
+      "reward": 0.5481632653061224,
+      "length": 123,
+      "success": true,
       "metrics": {
-        "steps": 39
+        "steps": 123
       }
     },
     {
       "episode": 316,
-      "step_start": 42311,
-      "step_end": 42488,
-      "reward": 0.3497959183673469,
-      "length": 177,
-      "success": true,
+      "step_start": 42445,
+      "step_end": 42690,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 177
+        "steps": 245
       }
     },
     {
       "episode": 317,
-      "step_start": 42488,
-      "step_end": 42529,
+      "step_start": 42690,
+      "step_end": 42935,
       "reward": 0.0,
-      "length": 41,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 41
+        "steps": 245
       }
     },
     {
       "episode": 318,
-      "step_start": 42529,
-      "step_end": 42774,
+      "step_start": 42935,
+      "step_end": 43180,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3516,30 +3516,30 @@
     },
     {
       "episode": 319,
-      "step_start": 42774,
-      "step_end": 42846,
-      "reward": 0.7355102040816326,
-      "length": 72,
-      "success": true,
+      "step_start": 43180,
+      "step_end": 43425,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 72
+        "steps": 245
       }
     },
     {
       "episode": 320,
-      "step_start": 42846,
-      "step_end": 43006,
+      "step_start": 43425,
+      "step_end": 43670,
       "reward": 0.0,
-      "length": 160,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 160
+        "steps": 245
       }
     },
     {
       "episode": 321,
-      "step_start": 43006,
-      "step_end": 43251,
+      "step_start": 43670,
+      "step_end": 43915,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3549,52 +3549,52 @@
     },
     {
       "episode": 322,
-      "step_start": 43251,
-      "step_end": 43329,
-      "reward": 0.713469387755102,
-      "length": 78,
-      "success": true,
+      "step_start": 43915,
+      "step_end": 44160,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 78
+        "steps": 245
       }
     },
     {
       "episode": 323,
-      "step_start": 43329,
-      "step_end": 43468,
+      "step_start": 44160,
+      "step_end": 44405,
       "reward": 0.0,
-      "length": 139,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 139
+        "steps": 245
       }
     },
     {
       "episode": 324,
-      "step_start": 43468,
-      "step_end": 43539,
+      "step_start": 44405,
+      "step_end": 44650,
       "reward": 0.0,
-      "length": 71,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 71
+        "steps": 245
       }
     },
     {
       "episode": 325,
-      "step_start": 43539,
-      "step_end": 43674,
+      "step_start": 44650,
+      "step_end": 44895,
       "reward": 0.0,
-      "length": 135,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 135
+        "steps": 245
       }
     },
     {
       "episode": 326,
-      "step_start": 43674,
-      "step_end": 43919,
+      "step_start": 44895,
+      "step_end": 45140,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3604,19 +3604,19 @@
     },
     {
       "episode": 327,
-      "step_start": 43919,
-      "step_end": 44140,
+      "step_start": 45140,
+      "step_end": 45385,
       "reward": 0.0,
-      "length": 221,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 221
+        "steps": 245
       }
     },
     {
       "episode": 328,
-      "step_start": 44140,
-      "step_end": 44385,
+      "step_start": 45385,
+      "step_end": 45630,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3626,8 +3626,8 @@
     },
     {
       "episode": 329,
-      "step_start": 44385,
-      "step_end": 44630,
+      "step_start": 45630,
+      "step_end": 45875,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3637,30 +3637,30 @@
     },
     {
       "episode": 330,
-      "step_start": 44630,
-      "step_end": 44819,
-      "reward": 0.3057142857142857,
-      "length": 189,
-      "success": true,
+      "step_start": 45875,
+      "step_end": 45912,
+      "reward": 0.0,
+      "length": 37,
+      "success": false,
       "metrics": {
-        "steps": 189
+        "steps": 37
       }
     },
     {
       "episode": 331,
-      "step_start": 44819,
-      "step_end": 44842,
+      "step_start": 45912,
+      "step_end": 46157,
       "reward": 0.0,
-      "length": 23,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 23
+        "steps": 245
       }
     },
     {
       "episode": 332,
-      "step_start": 44842,
-      "step_end": 45087,
+      "step_start": 46157,
+      "step_end": 46402,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3670,19 +3670,19 @@
     },
     {
       "episode": 333,
-      "step_start": 45087,
-      "step_end": 45222,
-      "reward": 0.5040816326530613,
-      "length": 135,
-      "success": true,
+      "step_start": 46402,
+      "step_end": 46647,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 135
+        "steps": 245
       }
     },
     {
       "episode": 334,
-      "step_start": 45222,
-      "step_end": 45467,
+      "step_start": 46647,
+      "step_end": 46892,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3692,8 +3692,8 @@
     },
     {
       "episode": 335,
-      "step_start": 45467,
-      "step_end": 45712,
+      "step_start": 46892,
+      "step_end": 47137,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3703,8 +3703,8 @@
     },
     {
       "episode": 336,
-      "step_start": 45712,
-      "step_end": 45957,
+      "step_start": 47137,
+      "step_end": 47382,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3714,8 +3714,8 @@
     },
     {
       "episode": 337,
-      "step_start": 45957,
-      "step_end": 46202,
+      "step_start": 47382,
+      "step_end": 47627,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3725,8 +3725,8 @@
     },
     {
       "episode": 338,
-      "step_start": 46202,
-      "step_end": 46447,
+      "step_start": 47627,
+      "step_end": 47872,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3736,30 +3736,30 @@
     },
     {
       "episode": 339,
-      "step_start": 46447,
-      "step_end": 46650,
-      "reward": 0.2542857142857142,
-      "length": 203,
-      "success": true,
+      "step_start": 47872,
+      "step_end": 48117,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 203
+        "steps": 245
       }
     },
     {
       "episode": 340,
-      "step_start": 46650,
-      "step_end": 46717,
-      "reward": 0.7538775510204081,
-      "length": 67,
-      "success": true,
+      "step_start": 48117,
+      "step_end": 48362,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 67
+        "steps": 245
       }
     },
     {
       "episode": 341,
-      "step_start": 46717,
-      "step_end": 46962,
+      "step_start": 48362,
+      "step_end": 48607,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3769,8 +3769,8 @@
     },
     {
       "episode": 342,
-      "step_start": 46962,
-      "step_end": 47207,
+      "step_start": 48607,
+      "step_end": 48852,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3780,8 +3780,8 @@
     },
     {
       "episode": 343,
-      "step_start": 47207,
-      "step_end": 47452,
+      "step_start": 48852,
+      "step_end": 49097,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3791,8 +3791,8 @@
     },
     {
       "episode": 344,
-      "step_start": 47452,
-      "step_end": 47697,
+      "step_start": 49097,
+      "step_end": 49342,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3802,8 +3802,8 @@
     },
     {
       "episode": 345,
-      "step_start": 47697,
-      "step_end": 47942,
+      "step_start": 49342,
+      "step_end": 49587,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3813,19 +3813,19 @@
     },
     {
       "episode": 346,
-      "step_start": 47942,
-      "step_end": 48187,
+      "step_start": 49587,
+      "step_end": 49655,
       "reward": 0.0,
-      "length": 245,
+      "length": 68,
       "success": false,
       "metrics": {
-        "steps": 245
+        "steps": 68
       }
     },
     {
       "episode": 347,
-      "step_start": 48187,
-      "step_end": 48432,
+      "step_start": 49655,
+      "step_end": 49900,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3835,8 +3835,8 @@
     },
     {
       "episode": 348,
-      "step_start": 48432,
-      "step_end": 48677,
+      "step_start": 49900,
+      "step_end": 50145,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3846,8 +3846,8 @@
     },
     {
       "episode": 349,
-      "step_start": 48677,
-      "step_end": 48922,
+      "step_start": 50145,
+      "step_end": 50390,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3857,8 +3857,8 @@
     },
     {
       "episode": 350,
-      "step_start": 48922,
-      "step_end": 49167,
+      "step_start": 50390,
+      "step_end": 50635,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3868,8 +3868,8 @@
     },
     {
       "episode": 351,
-      "step_start": 49167,
-      "step_end": 49412,
+      "step_start": 50635,
+      "step_end": 50880,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3879,8 +3879,8 @@
     },
     {
       "episode": 352,
-      "step_start": 49412,
-      "step_end": 49657,
+      "step_start": 50880,
+      "step_end": 51125,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3890,8 +3890,8 @@
     },
     {
       "episode": 353,
-      "step_start": 49657,
-      "step_end": 49902,
+      "step_start": 51125,
+      "step_end": 51370,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3901,8 +3901,8 @@
     },
     {
       "episode": 354,
-      "step_start": 49902,
-      "step_end": 50147,
+      "step_start": 51370,
+      "step_end": 51615,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3912,8 +3912,8 @@
     },
     {
       "episode": 355,
-      "step_start": 50147,
-      "step_end": 50392,
+      "step_start": 51615,
+      "step_end": 51860,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3923,8 +3923,8 @@
     },
     {
       "episode": 356,
-      "step_start": 50392,
-      "step_end": 50637,
+      "step_start": 51860,
+      "step_end": 52105,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3934,8 +3934,8 @@
     },
     {
       "episode": 357,
-      "step_start": 50637,
-      "step_end": 50882,
+      "step_start": 52105,
+      "step_end": 52350,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3945,8 +3945,8 @@
     },
     {
       "episode": 358,
-      "step_start": 50882,
-      "step_end": 51127,
+      "step_start": 52350,
+      "step_end": 52595,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3956,8 +3956,8 @@
     },
     {
       "episode": 359,
-      "step_start": 51127,
-      "step_end": 51372,
+      "step_start": 52595,
+      "step_end": 52840,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3967,8 +3967,8 @@
     },
     {
       "episode": 360,
-      "step_start": 51372,
-      "step_end": 51617,
+      "step_start": 52840,
+      "step_end": 53085,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3978,8 +3978,8 @@
     },
     {
       "episode": 361,
-      "step_start": 51617,
-      "step_end": 51862,
+      "step_start": 53085,
+      "step_end": 53330,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -3989,8 +3989,8 @@
     },
     {
       "episode": 362,
-      "step_start": 51862,
-      "step_end": 52107,
+      "step_start": 53330,
+      "step_end": 53575,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4000,8 +4000,8 @@
     },
     {
       "episode": 363,
-      "step_start": 52107,
-      "step_end": 52352,
+      "step_start": 53575,
+      "step_end": 53820,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4011,8 +4011,8 @@
     },
     {
       "episode": 364,
-      "step_start": 52352,
-      "step_end": 52597,
+      "step_start": 53820,
+      "step_end": 54065,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4022,8 +4022,8 @@
     },
     {
       "episode": 365,
-      "step_start": 52597,
-      "step_end": 52842,
+      "step_start": 54065,
+      "step_end": 54310,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4033,8 +4033,8 @@
     },
     {
       "episode": 366,
-      "step_start": 52842,
-      "step_end": 53087,
+      "step_start": 54310,
+      "step_end": 54555,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4044,8 +4044,8 @@
     },
     {
       "episode": 367,
-      "step_start": 53087,
-      "step_end": 53332,
+      "step_start": 54555,
+      "step_end": 54800,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4055,8 +4055,8 @@
     },
     {
       "episode": 368,
-      "step_start": 53332,
-      "step_end": 53577,
+      "step_start": 54800,
+      "step_end": 55045,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4066,8 +4066,8 @@
     },
     {
       "episode": 369,
-      "step_start": 53577,
-      "step_end": 53822,
+      "step_start": 55045,
+      "step_end": 55290,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4077,8 +4077,8 @@
     },
     {
       "episode": 370,
-      "step_start": 53822,
-      "step_end": 54067,
+      "step_start": 55290,
+      "step_end": 55535,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4088,8 +4088,8 @@
     },
     {
       "episode": 371,
-      "step_start": 54067,
-      "step_end": 54312,
+      "step_start": 55535,
+      "step_end": 55780,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4099,8 +4099,8 @@
     },
     {
       "episode": 372,
-      "step_start": 54312,
-      "step_end": 54557,
+      "step_start": 55780,
+      "step_end": 56025,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4110,19 +4110,19 @@
     },
     {
       "episode": 373,
-      "step_start": 54557,
-      "step_end": 54692,
-      "reward": 0.5040816326530613,
-      "length": 135,
-      "success": true,
+      "step_start": 56025,
+      "step_end": 56270,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 135
+        "steps": 245
       }
     },
     {
       "episode": 374,
-      "step_start": 54692,
-      "step_end": 54937,
+      "step_start": 56270,
+      "step_end": 56515,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4132,41 +4132,41 @@
     },
     {
       "episode": 375,
-      "step_start": 54937,
-      "step_end": 55097,
+      "step_start": 56515,
+      "step_end": 56760,
       "reward": 0.0,
-      "length": 160,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 160
+        "steps": 245
       }
     },
     {
       "episode": 376,
-      "step_start": 55097,
-      "step_end": 55146,
-      "reward": 0.82,
-      "length": 49,
-      "success": true,
+      "step_start": 56760,
+      "step_end": 57005,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 49
+        "steps": 245
       }
     },
     {
       "episode": 377,
-      "step_start": 55146,
-      "step_end": 55384,
+      "step_start": 57005,
+      "step_end": 57250,
       "reward": 0.0,
-      "length": 238,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 238
+        "steps": 245
       }
     },
     {
       "episode": 378,
-      "step_start": 55384,
-      "step_end": 55629,
+      "step_start": 57250,
+      "step_end": 57495,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4176,30 +4176,30 @@
     },
     {
       "episode": 379,
-      "step_start": 55629,
-      "step_end": 55711,
-      "reward": 0.6987755102040816,
-      "length": 82,
-      "success": true,
+      "step_start": 57495,
+      "step_end": 57740,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 82
+        "steps": 245
       }
     },
     {
       "episode": 380,
-      "step_start": 55711,
-      "step_end": 55797,
-      "reward": 0.6840816326530612,
-      "length": 86,
-      "success": true,
+      "step_start": 57740,
+      "step_end": 57985,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 86
+        "steps": 245
       }
     },
     {
       "episode": 381,
-      "step_start": 55797,
-      "step_end": 56042,
+      "step_start": 57985,
+      "step_end": 58230,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4209,8 +4209,8 @@
     },
     {
       "episode": 382,
-      "step_start": 56042,
-      "step_end": 56287,
+      "step_start": 58230,
+      "step_end": 58475,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4220,8 +4220,8 @@
     },
     {
       "episode": 383,
-      "step_start": 56287,
-      "step_end": 56532,
+      "step_start": 58475,
+      "step_end": 58720,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4231,8 +4231,8 @@
     },
     {
       "episode": 384,
-      "step_start": 56532,
-      "step_end": 56777,
+      "step_start": 58720,
+      "step_end": 58965,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4242,8 +4242,8 @@
     },
     {
       "episode": 385,
-      "step_start": 56777,
-      "step_end": 57022,
+      "step_start": 58965,
+      "step_end": 59210,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4253,19 +4253,19 @@
     },
     {
       "episode": 386,
-      "step_start": 57022,
-      "step_end": 57267,
-      "reward": 0.0,
-      "length": 245,
-      "success": false,
+      "step_start": 59210,
+      "step_end": 59247,
+      "reward": 0.8640816326530611,
+      "length": 37,
+      "success": true,
       "metrics": {
-        "steps": 245
+        "steps": 37
       }
     },
     {
       "episode": 387,
-      "step_start": 57267,
-      "step_end": 57512,
+      "step_start": 59247,
+      "step_end": 59492,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4275,8 +4275,8 @@
     },
     {
       "episode": 388,
-      "step_start": 57512,
-      "step_end": 57757,
+      "step_start": 59492,
+      "step_end": 59737,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4286,8 +4286,8 @@
     },
     {
       "episode": 389,
-      "step_start": 57757,
-      "step_end": 58002,
+      "step_start": 59737,
+      "step_end": 59982,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4297,19 +4297,19 @@
     },
     {
       "episode": 390,
-      "step_start": 58002,
-      "step_end": 58247,
-      "reward": 0.0,
-      "length": 245,
-      "success": false,
+      "step_start": 59982,
+      "step_end": 60194,
+      "reward": 0.22122448979591836,
+      "length": 212,
+      "success": true,
       "metrics": {
-        "steps": 245
+        "steps": 212
       }
     },
     {
       "episode": 391,
-      "step_start": 58247,
-      "step_end": 58492,
+      "step_start": 60194,
+      "step_end": 60439,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4319,30 +4319,30 @@
     },
     {
       "episode": 392,
-      "step_start": 58492,
-      "step_end": 58737,
+      "step_start": 60439,
+      "step_end": 60539,
       "reward": 0.0,
-      "length": 245,
+      "length": 100,
       "success": false,
       "metrics": {
-        "steps": 245
+        "steps": 100
       }
     },
     {
       "episode": 393,
-      "step_start": 58737,
-      "step_end": 58982,
+      "step_start": 60539,
+      "step_end": 60604,
       "reward": 0.0,
-      "length": 245,
+      "length": 65,
       "success": false,
       "metrics": {
-        "steps": 245
+        "steps": 65
       }
     },
     {
       "episode": 394,
-      "step_start": 58982,
-      "step_end": 59227,
+      "step_start": 60604,
+      "step_end": 60849,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4352,30 +4352,30 @@
     },
     {
       "episode": 395,
-      "step_start": 59227,
-      "step_end": 59427,
+      "step_start": 60849,
+      "step_end": 61094,
       "reward": 0.0,
-      "length": 200,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 200
+        "steps": 245
       }
     },
     {
       "episode": 396,
-      "step_start": 59427,
-      "step_end": 59623,
-      "reward": 0.2799999999999999,
-      "length": 196,
-      "success": true,
+      "step_start": 61094,
+      "step_end": 61182,
+      "reward": 0.0,
+      "length": 88,
+      "success": false,
       "metrics": {
-        "steps": 196
+        "steps": 88
       }
     },
     {
       "episode": 397,
-      "step_start": 59623,
-      "step_end": 59868,
+      "step_start": 61182,
+      "step_end": 61427,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4385,8 +4385,8 @@
     },
     {
       "episode": 398,
-      "step_start": 59868,
-      "step_end": 60113,
+      "step_start": 61427,
+      "step_end": 61672,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4396,8 +4396,8 @@
     },
     {
       "episode": 399,
-      "step_start": 60113,
-      "step_end": 60358,
+      "step_start": 61672,
+      "step_end": 61917,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4407,8 +4407,8 @@
     },
     {
       "episode": 400,
-      "step_start": 60358,
-      "step_end": 60603,
+      "step_start": 61917,
+      "step_end": 62162,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4418,19 +4418,19 @@
     },
     {
       "episode": 401,
-      "step_start": 60603,
-      "step_end": 60721,
-      "reward": 0.5665306122448979,
-      "length": 118,
-      "success": true,
+      "step_start": 62162,
+      "step_end": 62178,
+      "reward": 0.0,
+      "length": 16,
+      "success": false,
       "metrics": {
-        "steps": 118
+        "steps": 16
       }
     },
     {
       "episode": 402,
-      "step_start": 60721,
-      "step_end": 60966,
+      "step_start": 62178,
+      "step_end": 62423,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4440,30 +4440,30 @@
     },
     {
       "episode": 403,
-      "step_start": 60966,
-      "step_end": 61132,
+      "step_start": 62423,
+      "step_end": 62668,
       "reward": 0.0,
-      "length": 166,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 166
+        "steps": 245
       }
     },
     {
       "episode": 404,
-      "step_start": 61132,
-      "step_end": 61215,
+      "step_start": 62668,
+      "step_end": 62913,
       "reward": 0.0,
-      "length": 83,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 83
+        "steps": 245
       }
     },
     {
       "episode": 405,
-      "step_start": 61215,
-      "step_end": 61460,
+      "step_start": 62913,
+      "step_end": 63158,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4473,19 +4473,19 @@
     },
     {
       "episode": 406,
-      "step_start": 61460,
-      "step_end": 61583,
-      "reward": 0.5481632653061224,
-      "length": 123,
-      "success": true,
+      "step_start": 63158,
+      "step_end": 63403,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 123
+        "steps": 245
       }
     },
     {
       "episode": 407,
-      "step_start": 61583,
-      "step_end": 61828,
+      "step_start": 63403,
+      "step_end": 63648,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4495,8 +4495,8 @@
     },
     {
       "episode": 408,
-      "step_start": 61828,
-      "step_end": 62073,
+      "step_start": 63648,
+      "step_end": 63893,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4506,8 +4506,8 @@
     },
     {
       "episode": 409,
-      "step_start": 62073,
-      "step_end": 62318,
+      "step_start": 63893,
+      "step_end": 64138,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4517,8 +4517,8 @@
     },
     {
       "episode": 410,
-      "step_start": 62318,
-      "step_end": 62563,
+      "step_start": 64138,
+      "step_end": 64383,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4528,8 +4528,8 @@
     },
     {
       "episode": 411,
-      "step_start": 62563,
-      "step_end": 62808,
+      "step_start": 64383,
+      "step_end": 64628,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4539,8 +4539,8 @@
     },
     {
       "episode": 412,
-      "step_start": 62808,
-      "step_end": 63053,
+      "step_start": 64628,
+      "step_end": 64873,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4550,8 +4550,8 @@
     },
     {
       "episode": 413,
-      "step_start": 63053,
-      "step_end": 63298,
+      "step_start": 64873,
+      "step_end": 65118,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4561,8 +4561,8 @@
     },
     {
       "episode": 414,
-      "step_start": 63298,
-      "step_end": 63543,
+      "step_start": 65118,
+      "step_end": 65363,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4572,8 +4572,8 @@
     },
     {
       "episode": 415,
-      "step_start": 63543,
-      "step_end": 63788,
+      "step_start": 65363,
+      "step_end": 65608,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4583,19 +4583,19 @@
     },
     {
       "episode": 416,
-      "step_start": 63788,
-      "step_end": 63940,
-      "reward": 0.44163265306122446,
-      "length": 152,
-      "success": true,
+      "step_start": 65608,
+      "step_end": 65853,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 152
+        "steps": 245
       }
     },
     {
       "episode": 417,
-      "step_start": 63940,
-      "step_end": 64185,
+      "step_start": 65853,
+      "step_end": 66098,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4605,8 +4605,8 @@
     },
     {
       "episode": 418,
-      "step_start": 64185,
-      "step_end": 64430,
+      "step_start": 66098,
+      "step_end": 66343,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4616,19 +4616,19 @@
     },
     {
       "episode": 419,
-      "step_start": 64430,
-      "step_end": 64626,
+      "step_start": 66343,
+      "step_end": 66588,
       "reward": 0.0,
-      "length": 196,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 196
+        "steps": 245
       }
     },
     {
       "episode": 420,
-      "step_start": 64626,
-      "step_end": 64871,
+      "step_start": 66588,
+      "step_end": 66833,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4638,19 +4638,19 @@
     },
     {
       "episode": 421,
-      "step_start": 64871,
-      "step_end": 65076,
+      "step_start": 66833,
+      "step_end": 67078,
       "reward": 0.0,
-      "length": 205,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 205
+        "steps": 245
       }
     },
     {
       "episode": 422,
-      "step_start": 65076,
-      "step_end": 65321,
+      "step_start": 67078,
+      "step_end": 67323,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4660,19 +4660,8 @@
     },
     {
       "episode": 423,
-      "step_start": 65321,
-      "step_end": 65412,
-      "reward": 0.6657142857142857,
-      "length": 91,
-      "success": true,
-      "metrics": {
-        "steps": 91
-      }
-    },
-    {
-      "episode": 424,
-      "step_start": 65412,
-      "step_end": 65657,
+      "step_start": 67323,
+      "step_end": 67568,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4681,20 +4670,31 @@
       }
     },
     {
+      "episode": 424,
+      "step_start": 67568,
+      "step_end": 67682,
+      "reward": 0.5812244897959185,
+      "length": 114,
+      "success": true,
+      "metrics": {
+        "steps": 114
+      }
+    },
+    {
       "episode": 425,
-      "step_start": 65657,
-      "step_end": 65809,
+      "step_start": 67682,
+      "step_end": 67927,
       "reward": 0.0,
-      "length": 152,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 152
+        "steps": 245
       }
     },
     {
       "episode": 426,
-      "step_start": 65809,
-      "step_end": 66054,
+      "step_start": 67927,
+      "step_end": 68172,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4704,19 +4704,19 @@
     },
     {
       "episode": 427,
-      "step_start": 66054,
-      "step_end": 66244,
-      "reward": 0.30204081632653057,
-      "length": 190,
-      "success": true,
+      "step_start": 68172,
+      "step_end": 68417,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 190
+        "steps": 245
       }
     },
     {
       "episode": 428,
-      "step_start": 66244,
-      "step_end": 66489,
+      "step_start": 68417,
+      "step_end": 68662,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4726,8 +4726,8 @@
     },
     {
       "episode": 429,
-      "step_start": 66489,
-      "step_end": 66734,
+      "step_start": 68662,
+      "step_end": 68907,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4737,8 +4737,8 @@
     },
     {
       "episode": 430,
-      "step_start": 66734,
-      "step_end": 66979,
+      "step_start": 68907,
+      "step_end": 69152,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4748,8 +4748,8 @@
     },
     {
       "episode": 431,
-      "step_start": 66979,
-      "step_end": 67224,
+      "step_start": 69152,
+      "step_end": 69397,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4759,8 +4759,8 @@
     },
     {
       "episode": 432,
-      "step_start": 67224,
-      "step_end": 67469,
+      "step_start": 69397,
+      "step_end": 69642,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4770,19 +4770,19 @@
     },
     {
       "episode": 433,
-      "step_start": 67469,
-      "step_end": 67714,
-      "reward": 0.0,
-      "length": 245,
-      "success": false,
+      "step_start": 69642,
+      "step_end": 69698,
+      "reward": 0.7942857142857143,
+      "length": 56,
+      "success": true,
       "metrics": {
-        "steps": 245
+        "steps": 56
       }
     },
     {
       "episode": 434,
-      "step_start": 67714,
-      "step_end": 67959,
+      "step_start": 69698,
+      "step_end": 69943,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4792,8 +4792,8 @@
     },
     {
       "episode": 435,
-      "step_start": 67959,
-      "step_end": 68204,
+      "step_start": 69943,
+      "step_end": 70188,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4803,8 +4803,8 @@
     },
     {
       "episode": 436,
-      "step_start": 68204,
-      "step_end": 68449,
+      "step_start": 70188,
+      "step_end": 70433,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4814,19 +4814,19 @@
     },
     {
       "episode": 437,
-      "step_start": 68449,
-      "step_end": 68694,
-      "reward": 0.0,
-      "length": 245,
-      "success": false,
+      "step_start": 70433,
+      "step_end": 70625,
+      "reward": 0.2946938775510204,
+      "length": 192,
+      "success": true,
       "metrics": {
-        "steps": 245
+        "steps": 192
       }
     },
     {
       "episode": 438,
-      "step_start": 68694,
-      "step_end": 68939,
+      "step_start": 70625,
+      "step_end": 70870,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4836,8 +4836,8 @@
     },
     {
       "episode": 439,
-      "step_start": 68939,
-      "step_end": 69184,
+      "step_start": 70870,
+      "step_end": 71115,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4847,8 +4847,8 @@
     },
     {
       "episode": 440,
-      "step_start": 69184,
-      "step_end": 69429,
+      "step_start": 71115,
+      "step_end": 71360,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4858,8 +4858,8 @@
     },
     {
       "episode": 441,
-      "step_start": 69429,
-      "step_end": 69674,
+      "step_start": 71360,
+      "step_end": 71605,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4869,8 +4869,8 @@
     },
     {
       "episode": 442,
-      "step_start": 69674,
-      "step_end": 69919,
+      "step_start": 71605,
+      "step_end": 71850,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4880,8 +4880,8 @@
     },
     {
       "episode": 443,
-      "step_start": 69919,
-      "step_end": 70164,
+      "step_start": 71850,
+      "step_end": 72095,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4891,8 +4891,8 @@
     },
     {
       "episode": 444,
-      "step_start": 70164,
-      "step_end": 70409,
+      "step_start": 72095,
+      "step_end": 72340,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4902,8 +4902,8 @@
     },
     {
       "episode": 445,
-      "step_start": 70409,
-      "step_end": 70654,
+      "step_start": 72340,
+      "step_end": 72585,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4913,8 +4913,8 @@
     },
     {
       "episode": 446,
-      "step_start": 70654,
-      "step_end": 70899,
+      "step_start": 72585,
+      "step_end": 72830,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4924,8 +4924,8 @@
     },
     {
       "episode": 447,
-      "step_start": 70899,
-      "step_end": 71144,
+      "step_start": 72830,
+      "step_end": 73075,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4935,41 +4935,41 @@
     },
     {
       "episode": 448,
-      "step_start": 71144,
-      "step_end": 71246,
-      "reward": 0.6253061224489795,
-      "length": 102,
-      "success": true,
+      "step_start": 73075,
+      "step_end": 73320,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 102
+        "steps": 245
       }
     },
     {
       "episode": 449,
-      "step_start": 71246,
-      "step_end": 71364,
-      "reward": 0.5665306122448979,
-      "length": 118,
-      "success": true,
+      "step_start": 73320,
+      "step_end": 73329,
+      "reward": 0.0,
+      "length": 9,
+      "success": false,
       "metrics": {
-        "steps": 118
+        "steps": 9
       }
     },
     {
       "episode": 450,
-      "step_start": 71364,
-      "step_end": 71451,
-      "reward": 0.6804081632653061,
-      "length": 87,
-      "success": true,
+      "step_start": 73329,
+      "step_end": 73574,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 87
+        "steps": 245
       }
     },
     {
       "episode": 451,
-      "step_start": 71451,
-      "step_end": 71696,
+      "step_start": 73574,
+      "step_end": 73819,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4979,8 +4979,8 @@
     },
     {
       "episode": 452,
-      "step_start": 71696,
-      "step_end": 71941,
+      "step_start": 73819,
+      "step_end": 74064,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -4990,8 +4990,8 @@
     },
     {
       "episode": 453,
-      "step_start": 71941,
-      "step_end": 72186,
+      "step_start": 74064,
+      "step_end": 74309,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5001,8 +5001,8 @@
     },
     {
       "episode": 454,
-      "step_start": 72186,
-      "step_end": 72431,
+      "step_start": 74309,
+      "step_end": 74554,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5012,8 +5012,8 @@
     },
     {
       "episode": 455,
-      "step_start": 72431,
-      "step_end": 72676,
+      "step_start": 74554,
+      "step_end": 74799,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5023,19 +5023,19 @@
     },
     {
       "episode": 456,
-      "step_start": 72676,
-      "step_end": 72817,
+      "step_start": 74799,
+      "step_end": 75044,
       "reward": 0.0,
-      "length": 141,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 141
+        "steps": 245
       }
     },
     {
       "episode": 457,
-      "step_start": 72817,
-      "step_end": 73062,
+      "step_start": 75044,
+      "step_end": 75289,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5045,8 +5045,8 @@
     },
     {
       "episode": 458,
-      "step_start": 73062,
-      "step_end": 73307,
+      "step_start": 75289,
+      "step_end": 75534,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5056,8 +5056,8 @@
     },
     {
       "episode": 459,
-      "step_start": 73307,
-      "step_end": 73552,
+      "step_start": 75534,
+      "step_end": 75779,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5067,8 +5067,8 @@
     },
     {
       "episode": 460,
-      "step_start": 73552,
-      "step_end": 73797,
+      "step_start": 75779,
+      "step_end": 76024,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5078,8 +5078,8 @@
     },
     {
       "episode": 461,
-      "step_start": 73797,
-      "step_end": 74042,
+      "step_start": 76024,
+      "step_end": 76269,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5089,19 +5089,19 @@
     },
     {
       "episode": 462,
-      "step_start": 74042,
-      "step_end": 74275,
-      "reward": 0.1440816326530613,
-      "length": 233,
-      "success": true,
+      "step_start": 76269,
+      "step_end": 76514,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 233
+        "steps": 245
       }
     },
     {
       "episode": 463,
-      "step_start": 74275,
-      "step_end": 74520,
+      "step_start": 76514,
+      "step_end": 76759,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5111,8 +5111,8 @@
     },
     {
       "episode": 464,
-      "step_start": 74520,
-      "step_end": 74765,
+      "step_start": 76759,
+      "step_end": 77004,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5122,8 +5122,8 @@
     },
     {
       "episode": 465,
-      "step_start": 74765,
-      "step_end": 75010,
+      "step_start": 77004,
+      "step_end": 77249,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5133,8 +5133,8 @@
     },
     {
       "episode": 466,
-      "step_start": 75010,
-      "step_end": 75255,
+      "step_start": 77249,
+      "step_end": 77494,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5144,8 +5144,8 @@
     },
     {
       "episode": 467,
-      "step_start": 75255,
-      "step_end": 75500,
+      "step_start": 77494,
+      "step_end": 77739,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5155,8 +5155,8 @@
     },
     {
       "episode": 468,
-      "step_start": 75500,
-      "step_end": 75745,
+      "step_start": 77739,
+      "step_end": 77984,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5166,8 +5166,8 @@
     },
     {
       "episode": 469,
-      "step_start": 75745,
-      "step_end": 75990,
+      "step_start": 77984,
+      "step_end": 78229,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5177,19 +5177,19 @@
     },
     {
       "episode": 470,
-      "step_start": 75990,
-      "step_end": 76020,
-      "reward": 0.889795918367347,
-      "length": 30,
-      "success": true,
+      "step_start": 78229,
+      "step_end": 78474,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 30
+        "steps": 245
       }
     },
     {
       "episode": 471,
-      "step_start": 76020,
-      "step_end": 76265,
+      "step_start": 78474,
+      "step_end": 78719,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5199,8 +5199,8 @@
     },
     {
       "episode": 472,
-      "step_start": 76265,
-      "step_end": 76510,
+      "step_start": 78719,
+      "step_end": 78964,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5210,8 +5210,8 @@
     },
     {
       "episode": 473,
-      "step_start": 76510,
-      "step_end": 76755,
+      "step_start": 78964,
+      "step_end": 79209,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5221,8 +5221,8 @@
     },
     {
       "episode": 474,
-      "step_start": 76755,
-      "step_end": 77000,
+      "step_start": 79209,
+      "step_end": 79454,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5232,8 +5232,8 @@
     },
     {
       "episode": 475,
-      "step_start": 77000,
-      "step_end": 77245,
+      "step_start": 79454,
+      "step_end": 79699,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5243,8 +5243,8 @@
     },
     {
       "episode": 476,
-      "step_start": 77245,
-      "step_end": 77490,
+      "step_start": 79699,
+      "step_end": 79944,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5254,8 +5254,8 @@
     },
     {
       "episode": 477,
-      "step_start": 77490,
-      "step_end": 77735,
+      "step_start": 79944,
+      "step_end": 80189,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5265,8 +5265,8 @@
     },
     {
       "episode": 478,
-      "step_start": 77735,
-      "step_end": 77980,
+      "step_start": 80189,
+      "step_end": 80434,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5276,8 +5276,8 @@
     },
     {
       "episode": 479,
-      "step_start": 77980,
-      "step_end": 78225,
+      "step_start": 80434,
+      "step_end": 80679,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5287,8 +5287,8 @@
     },
     {
       "episode": 480,
-      "step_start": 78225,
-      "step_end": 78470,
+      "step_start": 80679,
+      "step_end": 80924,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5298,30 +5298,30 @@
     },
     {
       "episode": 481,
-      "step_start": 78470,
-      "step_end": 78674,
-      "reward": 0.2506122448979592,
-      "length": 204,
-      "success": true,
+      "step_start": 80924,
+      "step_end": 81169,
+      "reward": 0.0,
+      "length": 245,
+      "success": false,
       "metrics": {
-        "steps": 204
+        "steps": 245
       }
     },
     {
       "episode": 482,
-      "step_start": 78674,
-      "step_end": 78767,
+      "step_start": 81169,
+      "step_end": 81414,
       "reward": 0.0,
-      "length": 93,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 93
+        "steps": 245
       }
     },
     {
       "episode": 483,
-      "step_start": 78767,
-      "step_end": 79012,
+      "step_start": 81414,
+      "step_end": 81659,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5331,8 +5331,8 @@
     },
     {
       "episode": 484,
-      "step_start": 79012,
-      "step_end": 79257,
+      "step_start": 81659,
+      "step_end": 81904,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5342,8 +5342,8 @@
     },
     {
       "episode": 485,
-      "step_start": 79257,
-      "step_end": 79502,
+      "step_start": 81904,
+      "step_end": 82149,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5353,8 +5353,8 @@
     },
     {
       "episode": 486,
-      "step_start": 79502,
-      "step_end": 79747,
+      "step_start": 82149,
+      "step_end": 82394,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5364,19 +5364,19 @@
     },
     {
       "episode": 487,
-      "step_start": 79747,
-      "step_end": 79875,
+      "step_start": 82394,
+      "step_end": 82639,
       "reward": 0.0,
-      "length": 128,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 128
+        "steps": 245
       }
     },
     {
       "episode": 488,
-      "step_start": 79875,
-      "step_end": 80120,
+      "step_start": 82639,
+      "step_end": 82884,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5386,8 +5386,8 @@
     },
     {
       "episode": 489,
-      "step_start": 80120,
-      "step_end": 80365,
+      "step_start": 82884,
+      "step_end": 83129,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5397,8 +5397,8 @@
     },
     {
       "episode": 490,
-      "step_start": 80365,
-      "step_end": 80610,
+      "step_start": 83129,
+      "step_end": 83374,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5408,8 +5408,8 @@
     },
     {
       "episode": 491,
-      "step_start": 80610,
-      "step_end": 80855,
+      "step_start": 83374,
+      "step_end": 83619,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5419,19 +5419,19 @@
     },
     {
       "episode": 492,
-      "step_start": 80855,
-      "step_end": 81061,
+      "step_start": 83619,
+      "step_end": 83864,
       "reward": 0.0,
-      "length": 206,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 206
+        "steps": 245
       }
     },
     {
       "episode": 493,
-      "step_start": 81061,
-      "step_end": 81306,
+      "step_start": 83864,
+      "step_end": 84109,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5441,8 +5441,8 @@
     },
     {
       "episode": 494,
-      "step_start": 81306,
-      "step_end": 81551,
+      "step_start": 84109,
+      "step_end": 84354,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5452,19 +5452,19 @@
     },
     {
       "episode": 495,
-      "step_start": 81551,
-      "step_end": 81658,
+      "step_start": 84354,
+      "step_end": 84599,
       "reward": 0.0,
-      "length": 107,
+      "length": 245,
       "success": false,
       "metrics": {
-        "steps": 107
+        "steps": 245
       }
     },
     {
       "episode": 496,
-      "step_start": 81658,
-      "step_end": 81903,
+      "step_start": 84599,
+      "step_end": 84844,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5474,8 +5474,8 @@
     },
     {
       "episode": 497,
-      "step_start": 81903,
-      "step_end": 82148,
+      "step_start": 84844,
+      "step_end": 85089,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5485,8 +5485,8 @@
     },
     {
       "episode": 498,
-      "step_start": 82148,
-      "step_end": 82393,
+      "step_start": 85089,
+      "step_end": 85334,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5496,8 +5496,8 @@
     },
     {
       "episode": 499,
-      "step_start": 82393,
-      "step_end": 82638,
+      "step_start": 85334,
+      "step_end": 85579,
       "reward": 0.0,
       "length": 245,
       "success": false,
@@ -5507,8 +5507,8 @@
     },
     {
       "episode": 500,
-      "step_start": 82638,
-      "step_end": 82883,
+      "step_start": 85579,
+      "step_end": 85824,
       "reward": 0.0,
       "length": 245,
       "success": false,
